@@ -1,5 +1,5 @@
 
-import { Mail, Instagram, MessageCircle, Telegram } from "lucide-react";
+import { Mail, Instagram, MessageCircle, Facebook } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,7 +26,7 @@ const Footer = () => {
                 <MessageCircle className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <Telegram className="h-5 w-5" />
+                <Facebook className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <Mail className="h-5 w-5" />
