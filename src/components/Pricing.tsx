@@ -59,7 +59,7 @@ const Pricing = () => {
               className="w-full bg-primary hover:bg-primary-600 text-white font-medium py-3"
               asChild
             >
-              <a href="https://chat.whatsapp.com/B9l4tLwJoWNHPAfP8bllre" target="_blank" rel="noopener noreferrer">
+              <a href="https://otika.biz.id/cart/?add-to-cart=144" target="_blank" rel="noopener noreferrer">
                 Pilih Paket
               </a>
             </Button>
@@ -121,7 +121,7 @@ const Pricing = () => {
               className="w-full bg-primary hover:bg-primary-600 text-white font-medium py-3"
               asChild
             >
-              <a href="https://chat.whatsapp.com/B9l4tLwJoWNHPAfP8bllre" target="_blank" rel="noopener noreferrer">
+              <a href="https://otika.biz.id/cart/?add-to-cart=146" target="_blank" rel="noopener noreferrer">
                 Pilih Paket
               </a>
             </Button>
@@ -139,7 +139,7 @@ const Pricing = () => {
               className="bg-primary hover:bg-primary-600 text-white font-medium px-8 py-3"
               asChild
             >
-              <a href="https://chat.whatsapp.com/B9l4tLwJoWNHPAfP8bllre" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/6285117202425" target="_blank" rel="noopener noreferrer">
                 Hubungi Kami untuk Custom Request
               </a>
             </Button>

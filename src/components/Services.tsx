@@ -15,7 +15,7 @@ const Services = () => {
           <div className="order-2 md:order-1">
             <div className="p-1 bg-white rounded-xl shadow-lg">
               <img
-                src="https://otika.biz.id/wp-content/uploads/2024/09/c2694067-icon-22.png"
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
                 alt="Automated AI Chatbots"
                 className="w-full h-auto rounded-lg"
                 loading="lazy"
@@ -30,19 +30,19 @@ const Services = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-primary flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Berkomunikasi seperti manusia</span>
               </li>
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-primary flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Mampu mengirim gambar katalog produk</span>
               </li>
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-primary flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Bekerja 24/7 tanpa lelah</span>
               </li>
@@ -59,19 +59,19 @@ const Services = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-primary flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Kelola semua pesan dari berbagai platform</span>
               </li>
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-primary flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Tampilan antarmuka yang mudah digunakan</span>
               </li>
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-primary flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Analisis percakapan dan performa</span>
               </li>
@@ -80,7 +80,7 @@ const Services = () => {
           <div>
             <div className="p-1 bg-white rounded-xl shadow-lg">
               <img
-                src="https://otika.biz.id/wp-content/uploads/2024/09/31cefb9c-img-icon4.png"
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
                 alt="CRM Inbox"
                 className="w-full h-auto rounded-lg"
                 loading="lazy"

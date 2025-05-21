@@ -19,16 +19,16 @@ const Footer = () => {
               OTIKA adalah layanan integrasi Customer Service berbasis AI yang membantu bisnis Anda meningkatkan konversi penjualan dan meringankan beban CS Anda.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/otikaindonesia" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.threads.com/@otikaindonesia" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <MessageCircle className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="mailto:hai@otika.biz.id" className="text-gray-300 hover:text-white transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
@@ -59,7 +59,10 @@ const Footer = () => {
                 <a href="https://chat.whatsapp.com/B9l4tLwJoWNHPAfP8bllre" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Grup WhatsApp</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Email: info@otika.biz.id</a>
+                <a href="https://wa.me/6285117202425" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">WhatsApp: 0851-1720-2425</a>
+              </li>
+              <li>
+                <a href="mailto:hai@otika.biz.id" className="text-gray-300 hover:text-white transition-colors">Email: hai@otika.biz.id</a>
               </li>
               <li>
                 <a href="https://otika.biz.id" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Website: otika.biz.id</a>
@@ -73,7 +76,7 @@ const Footer = () => {
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a>
+                <a href="https://otika.biz.id/privacy-policy/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Terms of Service</a>

@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-left animate-fade-up">
             <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
-              Digital <span className="text-primary">Platform</span>
+              <span className="text-primary">Customize AI Bot</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-gray-700 mb-6 font-medium">
               Ubah Alur Penjualan dan Layanan Pelanggan dengan Teknologi AI

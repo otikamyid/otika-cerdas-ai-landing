@@ -50,20 +50,6 @@ const Clients = () => {
             </a>
           ))}
         </div>
-        <div className="flex justify-center mt-12 space-x-8">
-          <img 
-            src="https://otika.biz.id/wp-content/uploads/2024/09/a577c6ee-s-1.png" 
-            alt="Trusted Partner" 
-            className="h-12 md:h-16 w-auto"
-            loading="lazy"
-          />
-          <img 
-            src="https://otika.biz.id/wp-content/uploads/2024/09/7725d67f-s-4.png" 
-            alt="Trusted Partner" 
-            className="h-12 md:h-16 w-auto"
-            loading="lazy"
-          />
-        </div>
       </div>
     </section>
   );

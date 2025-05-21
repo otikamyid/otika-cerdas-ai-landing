@@ -30,6 +30,11 @@ const Testimonials = () => {
       image: "/lovable-uploads/ce6016f6-56d1-4135-a5be-3e893efa6c0a.png",
       client: "Nur Ramadhan Tours",
       description: "Sampai pada titik sekarang alhamdulillah membantu kami, terutama saat diluar hari dan jam kerja."
+    },
+    {
+      image: "/lovable-uploads/1e79055e-90e6-407e-abde-4074d8c3fcd2.png",
+      client: "Fit Motor Tegal",
+      description: "Awalnya dipake 1 cabang, sekarang nambah ke cabang lain. Contoh: kenaikan jumlah pelanggan yg datang setelah pake OTIKA."
     }
   ];
   
