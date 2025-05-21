@@ -3,8 +3,18 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="pt-16 pb-24 overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative pt-16 pb-24 overflow-hidden">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <img
+          src="https://otika.biz.id/wp-content/uploads/2024/09/b7f49e08-neobot-bg.png"
+          alt="Background"
+          className="w-full h-full object-cover object-center opacity-15"
+        />
+        <div className="absolute inset-0 bg-white/85"></div>
+      </div>
+      
+      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-left animate-fade-up">
             <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
@@ -36,7 +46,6 @@ const Hero = () => {
             </div>
           </div>
           <div className="relative hidden md:block">
-            <div className="absolute -z-10 bg-primary-100 rounded-full w-[450px] h-[450px] opacity-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
             <img
               src="https://otika.biz.id/wp-content/uploads/2024/09/b7f49e08-neobot-bg.png"
               alt="Otika AI Chat Assistant"
