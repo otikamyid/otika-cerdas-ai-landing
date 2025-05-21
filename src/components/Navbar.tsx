@@ -37,7 +37,7 @@ const Navbar = () => {
                 FAQ
               </a>
               <a
-                href="https://chat.whatsapp.com/B9l4tLwJoWNHPAfP8bllre"
+                href="https://wa.me/6285117202425"
                 className="btn-primary ml-4"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -99,7 +99,7 @@ const Navbar = () => {
               FAQ
             </a>
             <a
-              href="https://chat.whatsapp.com/B9l4tLwJoWNHPAfP8bllre"
+              href="https://wa.me/6285117202425"
               className="btn-primary w-full text-center mt-3"
               target="_blank"
               rel="noopener noreferrer"

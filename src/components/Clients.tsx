@@ -25,6 +25,11 @@ const Clients = () => {
       name: "Bule Pro Apparel",
       logo: "https://otika.biz.id/wp-content/uploads/2025/01/Bule-Pro-Apparel.webp",
       link: "https://wa.me/628978130907"
+    },
+    {
+      name: "Fit Motor Tegal",
+      logo: "/lovable-uploads/1e79055e-90e6-407e-abde-4074d8c3fcd2.png",
+      link: "#"
     }
   ];
 
@@ -32,7 +37,7 @@ const Clients = () => {
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-semibold text-center mb-8">Dipercaya oleh</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
           {clients.map((client, index) => (
             <a 
               key={index} 
@@ -44,7 +49,7 @@ const Clients = () => {
               <img 
                 src={client.logo} 
                 alt={client.name} 
-                className="h-16 w-auto object-contain rounded-full"
+                className="h-16 w-16 object-contain rounded-full"
                 loading="lazy"
               />
             </a>

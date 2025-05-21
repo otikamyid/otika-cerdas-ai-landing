@@ -8,7 +8,8 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-left animate-fade-up">
             <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
-              <span className="text-primary">Customize AI Bot</span>
+              <span className="text-black">Customize </span>
+              <span className="text-primary">AI Chatbot</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-gray-700 mb-6 font-medium">
               Ubah Alur Penjualan dan Layanan Pelanggan dengan Teknologi AI
@@ -16,7 +17,7 @@ const Hero = () => {
             <p className="text-lg text-gray-600 mb-8">
               Cukup <span className="font-semibold text-primary">Rp 3000-an/hari</span> setara harga Es Teh 🤭
             </p>
-            <div className="space-x-4">
+            <div className="space-x-4 flex flex-wrap gap-4">
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary-600 text-white font-medium px-6 py-3"

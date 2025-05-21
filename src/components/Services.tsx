@@ -13,11 +13,11 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1">
-            <div className="p-1 bg-white rounded-xl shadow-lg">
+            <div className="p-1 bg-white rounded-xl shadow-lg overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                src="https://images.pexels.com/photos/6153343/pexels-photo-6153343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Automated AI Chatbots"
-                className="w-full h-auto rounded-lg"
+                className="w-full h-[300px] object-cover rounded-lg"
                 loading="lazy"
               />
             </div>
@@ -78,11 +78,11 @@ const Services = () => {
             </ul>
           </div>
           <div>
-            <div className="p-1 bg-white rounded-xl shadow-lg">
+            <div className="p-1 bg-white rounded-xl shadow-lg overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                src="https://images.pexels.com/photos/8284724/pexels-photo-8284724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="CRM Inbox"
-                className="w-full h-auto rounded-lg"
+                className="w-full h-[300px] object-cover rounded-lg"
                 loading="lazy"
               />
             </div>
