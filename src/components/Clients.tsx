@@ -28,7 +28,7 @@ const Clients = () => {
     },
     {
       name: "Fit Motor Tegal",
-      logo: "/lovable-uploads/1e79055e-90e6-407e-abde-4074d8c3fcd2.png",
+      logo: "/lovable-uploads/75122380-2821-4162-a300-869d7f57e0f7.png",
       link: "#"
     }
   ];
