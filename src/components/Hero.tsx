@@ -47,7 +47,7 @@ const Hero = () => {
           </div>
           <div className="relative hidden md:block">
             <img
-              src="https://otika.biz.id/wp-content/uploads/2024/09/b7f49e08-neobot-bg.png"
+              src="/lovable-uploads/111656fd-5712-4aa1-8155-dc8ddc66129b.png"
               alt="Otika AI Chat Assistant"
               className="mx-auto max-w-full h-auto animate-fade-in"
               loading="lazy"

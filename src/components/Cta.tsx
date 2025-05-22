@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Whatsapp } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 const Cta = () => {
   return (
@@ -22,7 +22,7 @@ const Cta = () => {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2"
             >
-              <Whatsapp className="h-5 w-5" />
+              <MessageCircle className="h-5 w-5" />
               <span>Konsultasi Gratis</span>
             </a>
           </Button>

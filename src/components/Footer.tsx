@@ -1,5 +1,5 @@
 
-import { Mail, Instagram, MessageCircle, Facebook, Whatsapp } from "lucide-react";
+import { Mail, Instagram, MessageCircle, Facebook } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
