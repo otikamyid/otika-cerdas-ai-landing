@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Background image with overlay */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img
-          src="/lovable-uploads/03f7a487-9b4f-44f6-b154-326c9ccbca06.png"
+          src="/lovable-uploads/db0473d1-cbfb-4882-b526-04b00053cc6e.png"
           alt="Background"
           className="w-full h-full object-cover object-center opacity-20"
         />

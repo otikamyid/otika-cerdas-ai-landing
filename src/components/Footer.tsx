@@ -62,10 +62,10 @@ const Footer = () => {
                 <a href="https://wa.me/6285117202425" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">WhatsApp: 0851-1720-2425</a>
               </li>
               <li>
-                <a href="mailto:hai@otika.biz.id" className="text-gray-300 hover:text-white transition-colors">Email: hai@otika.biz.id</a>
+                <a href="mailto:hai@otika.biz.id" className="text-gray-300 hover:text-white transition-colors">hai@otika.biz.id</a>
               </li>
               <li>
-                <a href="https://otika.biz.id" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Website: otika.biz.id</a>
+                <a href="https://otika.biz.id" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">otika.biz.id</a>
               </li>
             </ul>
           </div>
