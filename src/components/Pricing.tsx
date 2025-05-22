@@ -43,6 +43,10 @@ const Pricing = () => {
               </li>
               <li className="flex items-start">
                 <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <span>Auto Off ketika intervensi manusia</span>
+              </li>
+              <li className="flex items-start">
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
                 <span>Daya Ingat</span>
               </li>
               <li className="flex items-start">
@@ -109,11 +113,19 @@ const Pricing = () => {
               </li>
               <li className="flex items-start">
                 <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <span>Bisa lacak pengiriman langsung oleh AI</span>
+              </li>
+              <li className="flex items-start">
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
                 <span>Analisis gambar</span>
               </li>
               <li className="flex items-start">
                 <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
                 <span>Integrasi Woocommerce WordPress</span>
+              </li>
+              <li className="flex items-start">
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <span>Boleh request 1 Fitur Tambahan Custom</span>
               </li>
             </ul>
             
@@ -136,7 +148,7 @@ const Pricing = () => {
             </p>
             <Button 
               size="lg"
-              className="bg-primary hover:bg-primary-600 text-white font-medium px-8 py-3"
+              className="bg-primary hover:bg-primary-600 text-white font-medium px-4 sm:px-8 py-3 w-full sm:w-auto"
               asChild
             >
               <a href="https://wa.me/6285117202425" target="_blank" rel="noopener noreferrer">

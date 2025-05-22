@@ -7,9 +7,9 @@ const Hero = () => {
       {/* Background image with overlay */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img
-          src="https://otika.biz.id/wp-content/uploads/2024/09/b7f49e08-neobot-bg.png"
+          src="/lovable-uploads/03f7a487-9b4f-44f6-b154-326c9ccbca06.png"
           alt="Background"
-          className="w-full h-full object-cover object-center opacity-15"
+          className="w-full h-full object-cover object-center opacity-20"
         />
         <div className="absolute inset-0 bg-white/85"></div>
       </div>
