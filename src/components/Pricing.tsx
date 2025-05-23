@@ -1,11 +1,12 @@
+
 import { CheckIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="section bg-white">
+    <section id="pricing" className="section bg-white py-16 md:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-2xl font-bold text-gray-700 uppercase mb-2">Layanan utama kami</h2>
           <h3 className="text-3xl font-bold mb-6">Paket Layanan Otika</h3>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -18,7 +19,7 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Pricing Card 1 */}
-          <div className="pricing-card">
+          <div className="pricing-card h-full">
             <div className="text-center mb-6">
               <h3 className="text-2xl font-bold mb-1">Paket SMART</h3>
               <div className="flex justify-center items-end mb-6">
@@ -29,31 +30,31 @@ const Pricing = () => {
             
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Schedule/Penjadwalan AI On / Off</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Kondisi pengendali AI Bot On / Off</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Memanggil agent/CS manusia ketika membutuhkan support manusia</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Auto Off ketika intervensi manusia</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Daya Ingat</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>300 pertanyaan/hari</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>24 Jam NonStop</span>
               </li>
             </ul>
@@ -69,7 +70,7 @@ const Pricing = () => {
           </div>
 
           {/* Pricing Card 2 */}
-          <div className="pricing-card pricing-card-highlight">
+          <div className="pricing-card pricing-card-highlight h-full">
             <div className="absolute top-0 right-0 bg-primary text-white text-xs px-3 py-1 rounded-bl-lg rounded-tr-lg font-semibold">
               POPULER
             </div>
@@ -83,47 +84,47 @@ const Pricing = () => {
             
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span className="font-medium">Semua Fitur SMART</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Auto Off ketika intervensi CS manusia</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Kirim Gambar katalog Produk/Jasa</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Membaca & Mempelajari Data PDF, Google Doc, Spreadsheet, Excel dll</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Daya Ingat & konteks</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Bisa Browsing Google</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Hitung ongkir langsung oleh AI</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Bisa lacak pengiriman langsung oleh AI</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Analisis gambar</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Integrasi Woocommerce WordPress</span>
               </li>
               <li className="flex items-start">
-                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" />
+                <CheckIcon className="h-5 w-5 text-primary flex-shrink-0 mr-3 mt-0.5" aria-hidden="true" />
                 <span>Boleh request 1 Fitur Tambahan Custom</span>
               </li>
             </ul>
@@ -139,10 +140,10 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="mt-16 max-w-4xl mx-auto text-center px-4">
-          <div className="bg-gray-50 rounded-2xl p-8 shadow-sm">
-            <h3 className="text-2xl font-bold mb-6">Mau Custom Request?</h3>
-            <p className="text-lg text-gray-600 mb-8">
+        <div className="mt-12 max-w-4xl mx-auto text-center px-4">
+          <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm">
+            <h3 className="text-2xl font-bold mb-4 sm:mb-6">Mau Custom Request?</h3>
+            <p className="text-lg text-gray-600 mb-6 sm:mb-8">
               Paket ini memungkinkan Admin AI Anda menjadi super Bot menyesuaikan kebutuhan tugas admin Anda yang sangat kompleks.
             </p>
             <Button 
@@ -151,7 +152,7 @@ const Pricing = () => {
               asChild
             >
               <a href="https://wa.me/6285117202425" target="_blank" rel="noopener noreferrer">
-                Custom Request
+                Gabung Grup WhatsApp
               </a>
             </Button>
           </div>

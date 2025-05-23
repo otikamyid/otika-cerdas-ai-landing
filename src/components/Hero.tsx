@@ -10,6 +10,9 @@ const Hero = () => {
           src="/lovable-uploads/db0473d1-cbfb-4882-b526-04b00053cc6e.png"
           alt="Background"
           className="w-full h-full object-cover object-center opacity-20"
+          loading="lazy"
+          width="1920"
+          height="1080"
         />
         <div className="absolute inset-0 bg-white/85"></div>
       </div>
@@ -47,10 +50,12 @@ const Hero = () => {
           </div>
           <div className="relative hidden md:block">
             <img
-              src="https://otika.biz.id/wp-content/uploads/2024/09/b7f49e08-neobot-bg.png"
+              src="/lovable-uploads/42d71d5c-d05c-46a9-97cc-e4031f407f2f.png"
               alt="Otika AI Chat Assistant"
               className="mx-auto max-w-full h-auto animate-fade-in"
               loading="lazy"
+              width="600"
+              height="600"
             />
           </div>
         </div>
