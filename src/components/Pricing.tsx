@@ -1,4 +1,3 @@
-
 import { CheckIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -63,7 +62,7 @@ const Pricing = () => {
               className="w-full bg-primary hover:bg-primary-600 text-white font-medium py-3"
               asChild
             >
-              <a href="https://otika.biz.id/cart/?add-to-cart=144" target="_blank" rel="noopener noreferrer">
+              <a href="https://otika.myr.id/membership/otika" target="_blank" rel="noopener noreferrer">
                 Pilih Paket
               </a>
             </Button>
@@ -133,7 +132,7 @@ const Pricing = () => {
               className="w-full bg-primary hover:bg-primary-600 text-white font-medium py-3"
               asChild
             >
-              <a href="https://otika.biz.id/cart/?add-to-cart=146" target="_blank" rel="noopener noreferrer">
+              <a href="https://otika.myr.id/membership/otika" target="_blank" rel="noopener noreferrer">
                 Pilih Paket
               </a>
             </Button>
