@@ -151,7 +151,7 @@ const Pricing = () => {
               asChild
             >
               <a href="https://wa.me/6285117202425" target="_blank" rel="noopener noreferrer">
-                Hubungi Kami untuk Custom Request
+                Custom Request
               </a>
             </Button>
           </div>
