@@ -152,7 +152,7 @@ const Pricing = () => {
               asChild
             >
               <a href="https://wa.me/6285117202425" target="_blank" rel="noopener noreferrer">
-                Gabung Grup WhatsApp
+                Request Fitur!
               </a>
             </Button>
           </div>
