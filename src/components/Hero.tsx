@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Background image with overlay */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img
-          src="/lovable-uploads/db0473d1-cbfb-4882-b526-04b00053cc6e.png"
+          src="lovable-uploads/Hero Image OTIKA (1).webp"
           alt="Background"
           className="w-full h-full object-cover object-center opacity-20"
           loading="lazy"
