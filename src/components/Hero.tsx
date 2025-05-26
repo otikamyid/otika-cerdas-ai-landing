@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Background image with overlay */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img
-          src="lovable-uploads/Hero Image OTIKA (1).webp"
+          src="lovable-uploads/db0473d1-cbfb-4882-b526-04b00053cc6e.png"
           alt="Background"
           className="w-full h-full object-cover object-center opacity-20"
           loading="lazy"
@@ -50,7 +50,7 @@ const Hero = () => {
           </div>
           <div className="relative hidden md:block">
             <img
-              src="/lovable-uploads/42d71d5c-d05c-46a9-97cc-e4031f407f2f.png"
+              src="/lovable-uploads/Hero Image OTIKA (1).webp"
               alt="Otika AI Chat Assistant"
               className="mx-auto max-w-full h-auto animate-fade-in"
               loading="lazy"
