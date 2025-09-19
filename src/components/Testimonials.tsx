@@ -35,6 +35,11 @@ const Testimonials = () => {
       image: "/lovable-uploads/1e79055e-90e6-407e-abde-4074d8c3fcd2.png",
       client: "Fit Motor Tegal",
       description: "Awalnya dipake 1 cabang, sekarang nambah ke cabang lain. Contoh: kenaikan jumlah pelanggan yg datang setelah pake OTIKA."
+    },
+    {
+      image: "/lovable-uploads/megacon-testimonial.jpeg",
+      client: "PT Megacon Bangun Perkasa",
+      description: "Transaksinya lumayan besar ya Pak, yang udah deal deal pasca AI ini? Alhamdulillah mas sampai Milyaran iya sampai ratusan juta."
     }
   ];
   
