@@ -30,6 +30,11 @@ const Clients = () => {
       name: "Fit Motor Tegal",
       logo: "/lovable-uploads/75122380-2821-4162-a300-869d7f57e0f7.png",
       link: "https://wa.me/6285799272526"
+    },
+    {
+      name: "PT Megacon Bangun Perkasa",
+      logo: "https://megaconperkasa.com/wp-content/uploads/2022/09/logo-megacon-precast.png.pagespeed.ce.IKReW0H-aG.png",
+      link: "https://megaconperkasa.com/"
     }
   ];
 
