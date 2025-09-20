@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -52,67 +51,96 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="section bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl font-bold text-gray-700 uppercase mb-2">Testimonials</h2>
-          <h3 className="text-3xl font-bold mb-4">Yang dikatakan oleh pengguna layanan</h3>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+    <section id="testimonials" className="section relative overflow-hidden">
+      {/* Modern Background Elements */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-50/30 to-white"></div>
+      <div className="absolute top-20 left-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-20 w-80 h-80 bg-primary-300/8 rounded-full blur-3xl"></div>
+      
+      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-20">
+          <div className="mb-6">
+            <span className="inline-block px-4 py-2 bg-primary/10 text-primary font-semibold rounded-full text-sm border border-primary/20 mb-6">
+              ⭐ Testimoni
+            </span>
+          </div>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-8">
+            <span className="text-gray-900">Yang dikatakan oleh</span><br />
+            <span className="gradient-text">pengguna layanan</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Berikut sedikit testimoni dari beberapa pengguna layanan kami dari berbagai sektor.
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="whatsapp-pattern rounded-xl shadow-md overflow-hidden p-2 mb-6 md:mb-0">
-              <img 
-                src={testimonials[activeIndex].image} 
-                alt={`Testimoni dari ${testimonials[activeIndex].client}`} 
-                className="w-full h-auto max-h-[600px] rounded-lg object-contain bg-white"
-                loading="lazy"
-              />
-            </div>
-            <div className="bg-white rounded-xl shadow-md p-8">
-              <div className="mb-6">
-                <h4 className="text-xl font-semibold mb-2">{testimonials[activeIndex].client}</h4>
-                <div className="flex mb-4">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <svg key={star} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
+        <div className="max-w-7xl mx-auto relative mb-32">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary-300/10 rounded-3xl blur-2xl scale-110"></div>
+              <div className="relative whatsapp-pattern rounded-3xl shadow-2xl overflow-hidden p-4">
+                <div className="bg-white/90 backdrop-blur-xl border border-white/30 rounded-2xl p-2">
+                  <img 
+                    src={testimonials[activeIndex].image} 
+                    alt={`Testimoni dari ${testimonials[activeIndex].client}`} 
+                    className="w-full h-auto max-h-[600px] rounded-xl object-contain"
+                    loading="lazy"
+                  />
                 </div>
-                <p className="text-gray-600 text-lg">
-                  {testimonials[activeIndex].description}
+              </div>
+            </div>
+            
+            <div className="testimonial-card">
+              <div className="mb-8">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-2xl">💬</span>
+                  </div>
+                  <div>
+                    <h4 className="text-2xl font-bold text-gray-900">{testimonials[activeIndex].client}</h4>
+                    <div className="flex mt-2">
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <svg key={star} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-lg text-gray-600 leading-relaxed italic">
+                  "{testimonials[activeIndex].description}"
                 </p>
               </div>
               
-              <div className="flex justify-between items-center mt-8">
+              <div className="flex justify-between items-center">
                 <button 
                   onClick={prevSlide}
-                  className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition-colors duration-200"
+                  className="w-12 h-12 bg-primary/10 hover:bg-primary/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                   aria-label="Previous testimonial"
                 >
-                  <ChevronLeft className="h-5 w-5" />
+                  <ChevronLeft className="h-6 w-6 text-primary" />
                 </button>
-                <div className="flex space-x-2">
+                
+                <div className="flex space-x-3">
                   {testimonials.map((_, index) => (
                     <button
                       key={index}
                       onClick={() => setActiveIndex(index)}
-                      className={`h-2.5 w-2.5 rounded-full ${
-                        index === activeIndex ? 'bg-primary' : 'bg-gray-300'
+                      className={`h-3 w-3 rounded-full transition-all duration-300 ${
+                        index === activeIndex 
+                          ? 'bg-primary scale-125' 
+                          : 'bg-gray-300 hover:bg-primary/50'
                       }`}
                       aria-label={`Go to testimonial ${index + 1}`}
                     />
                   ))}
                 </div>
+                
                 <button 
                   onClick={nextSlide}
-                  className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition-colors duration-200"
+                  className="w-12 h-12 bg-primary/10 hover:bg-primary/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                   aria-label="Next testimonial"
                 >
-                  <ChevronRight className="h-5 w-5" />
+                  <ChevronRight className="h-6 w-6 text-primary" />
                 </button>
               </div>
             </div>
