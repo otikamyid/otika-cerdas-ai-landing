@@ -73,6 +73,7 @@ const Faq = () => {
           <li>Lacak paket kiriman</li>
           <li>Konversi mata uang</li>
           <li>Forward pesan ke tim divisi lain</li>
+          <li>Pencatatan Leads secara mendetail</li>
         </ul>
       )
     }
