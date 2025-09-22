@@ -53,16 +53,16 @@ const Clients = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-8 items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 lg:gap-8 max-w-6xl mx-auto">
           {clients.map((client, index) => (
             <a 
               key={index} 
               href={client.link} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group flex flex-col items-center p-6 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 border border-gray-100"
+              className="group flex flex-col items-center justify-center p-6 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 border border-gray-100 min-h-[160px]"
             >
-              <div className="w-20 h-20 mb-3 rounded-full overflow-hidden bg-gray-50 flex items-center justify-center p-2">
+              <div className="w-16 h-16 lg:w-20 lg:h-20 mb-3 rounded-full overflow-hidden bg-gray-50 flex items-center justify-center p-2 flex-shrink-0">
                 <img 
                   src={client.logo} 
                   alt={client.name} 
@@ -70,7 +70,7 @@ const Clients = () => {
                   loading="lazy"
                 />
               </div>
-              <span className="text-sm font-medium text-gray-700 text-center leading-tight">
+              <span className="text-xs lg:text-sm font-medium text-gray-700 text-center leading-tight">
                 {client.name}
               </span>
             </a>
