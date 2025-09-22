@@ -101,96 +101,96 @@ const Pricing = () => {
           </div>
 
           {/* Pricing Card 2 - Featured */}
-          <div className="pricing-card pricing-card-highlight relative h-full">
+          <div className="pricing-card relative h-full">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-sm px-6 py-2 rounded-full font-bold shadow-lg">
+              <span className="bg-gradient-to-r from-orange-400 to-orange-600 text-white text-xs px-4 py-1.5 rounded-full font-bold shadow-lg border border-orange-300">
                 ⭐ POPULER
               </span>
             </div>
             
             <div className="text-center mb-8 pt-4">
               <div className="mb-6">
-                <span className="inline-block px-3 py-1 bg-white/20 text-white font-semibold rounded-full text-sm mb-4">
+                <span className="inline-block px-3 py-1 bg-primary/10 text-primary font-semibold rounded-full text-sm mb-4">
                   🚀 Pro Plan
                 </span>
               </div>
-              <h3 className="text-3xl font-display font-bold mb-4 text-white">Paket GENIUS</h3>
+              <h3 className="text-3xl font-display font-bold mb-4">Paket GENIUS</h3>
               <div className="flex justify-center items-end mb-6">
-                <span className="text-6xl font-bold text-white">Rp 199k</span>
-                <span className="text-white/80 ml-3 text-lg">/ bulan</span>
+                <span className="text-6xl font-bold gradient-text">Rp 199k</span>
+                <span className="text-gray-500 ml-3 text-lg">/ bulan</span>
               </div>
             </div>
             
             <div className="space-y-6 mb-10">
               <div className="flex items-start group">
-                <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-white/30 transition-colors flex-shrink-0 mt-1">
-                  <CheckIcon className="h-4 w-4 text-white" aria-hidden="true" />
+                <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
+                  <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-white font-medium">Semua Fitur SMART</span>
+                <span className="text-gray-700 font-medium">Semua Fitur SMART</span>
               </div>
               <div className="flex items-start group">
-                <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-white/30 transition-colors flex-shrink-0 mt-1">
-                  <CheckIcon className="h-4 w-4 text-white" aria-hidden="true" />
+                <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
+                  <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-white">Auto Off ketika intervensi CS manusia</span>
+                <span className="text-gray-700">Auto Off ketika intervensi CS manusia</span>
               </div>
               <div className="flex items-start group">
-                <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-white/30 transition-colors flex-shrink-0 mt-1">
-                  <CheckIcon className="h-4 w-4 text-white" aria-hidden="true" />
+                <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
+                  <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-white">Kirim Gambar katalog Produk/Jasa</span>
+                <span className="text-gray-700">Kirim Gambar katalog Produk/Jasa</span>
               </div>
               <div className="flex items-start group">
-                <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-white/30 transition-colors flex-shrink-0 mt-1">
-                  <CheckIcon className="h-4 w-4 text-white" aria-hidden="true" />
+                <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
+                  <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-white">Membaca & Mempelajari Data PDF, Google Doc, Spreadsheet, Excel dll</span>
+                <span className="text-gray-700">Membaca & Mempelajari Data PDF, Google Doc, Spreadsheet, Excel dll</span>
               </div>
               <div className="flex items-start group">
-                <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-white/30 transition-colors flex-shrink-0 mt-1">
-                  <CheckIcon className="h-4 w-4 text-white" aria-hidden="true" />
+                <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
+                  <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-white">Daya Ingat & konteks</span>
+                <span className="text-gray-700">Daya Ingat & konteks</span>
               </div>
               <div className="flex items-start group">
-                <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-white/30 transition-colors flex-shrink-0 mt-1">
-                  <CheckIcon className="h-4 w-4 text-white" aria-hidden="true" />
+                <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
+                  <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-white">Bisa Browsing Google</span>
+                <span className="text-gray-700">Bisa Browsing Google</span>
               </div>
               <div className="flex items-start group">
-                <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-white/30 transition-colors flex-shrink-0 mt-1">
-                  <CheckIcon className="h-4 w-4 text-white" aria-hidden="true" />
+                <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
+                  <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-white">Hitung ongkir langsung oleh AI</span>
+                <span className="text-gray-700">Hitung ongkir langsung oleh AI</span>
               </div>
               <div className="flex items-start group">
-                <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-white/30 transition-colors flex-shrink-0 mt-1">
-                  <CheckIcon className="h-4 w-4 text-white" aria-hidden="true" />
+                <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
+                  <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-white">Bisa lacak pengiriman langsung oleh AI</span>
+                <span className="text-gray-700">Bisa lacak pengiriman langsung oleh AI</span>
               </div>
               <div className="flex items-start group">
-                <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-white/30 transition-colors flex-shrink-0 mt-1">
-                  <CheckIcon className="h-4 w-4 text-white" aria-hidden="true" />
+                <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
+                  <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-white">Analisis gambar</span>
+                <span className="text-gray-700">Analisis gambar</span>
               </div>
               <div className="flex items-start group">
-                <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-white/30 transition-colors flex-shrink-0 mt-1">
-                  <CheckIcon className="h-4 w-4 text-white" aria-hidden="true" />
+                <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
+                  <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-white">Integrasi Woocommerce WordPress</span>
+                <span className="text-gray-700">Integrasi Woocommerce WordPress</span>
               </div>
               <div className="flex items-start group">
-                <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-white/30 transition-colors flex-shrink-0 mt-1">
-                  <CheckIcon className="h-4 w-4 text-white" aria-hidden="true" />
+                <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
+                  <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-white">Boleh request 1 Fitur Tambahan Custom</span>
+                <span className="text-gray-700">Boleh request 1 Fitur Tambahan Custom</span>
               </div>
             </div>
             
-            <button className="w-full bg-white text-primary hover:bg-gray-100 font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105">
+            <button className="btn-secondary w-full">
               <a href="https://otika.myr.id/membership/otika" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                 <span>Pilih Paket</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
