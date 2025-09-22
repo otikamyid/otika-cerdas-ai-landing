@@ -25,10 +25,7 @@ const Hero = () => {
               <span className="text-primary">AI Chatbot</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-gray-700 mb-6 font-medium">
-              Tujuan kita adalah membuat 
-              <span className="bg-primary text-white px-3 py-1 rounded-lg mx-1 font-semibold">
-                bisnis Anda jalan, CS Anda bahagia 😊
-              </span>
+              Ubah Alur Penjualan dan Layanan Pelanggan dengan Teknologi AI
             </h2>
             <p className="text-lg text-gray-600 mb-8">
               Cukup <span className="font-semibold text-primary">Rp 3000-an/hari</span> setara harga Es Teh 🤭
