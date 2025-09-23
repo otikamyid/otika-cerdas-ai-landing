@@ -214,7 +214,7 @@ const Pricing = () => {
                 <span className="gradient-text">Mau Custom Request?</span>
               </h3>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Paket ini memungkinkan Admin AI Anda menjadi super Bot menyesuaikan kebutuhan tugas admin Anda yang sangat kompleks.
+                Paket ini memungkinkan Admin AI Anda menjadi super Bot menyesuaikan kebutuhan tugas admin Anda yang sangat kompleks. Custom serumit apapun akan kita laksanakan.
               </p>
               <button className="btn-primary">
                 <a href="https://wa.me/6285117202425" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
