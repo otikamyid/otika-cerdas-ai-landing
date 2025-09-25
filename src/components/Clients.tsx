@@ -7,7 +7,7 @@ const Clients = () => {
       link: "https://s.id/skbkaranganyar"
     },
     {
-      name: "Bakpia Wirda",
+      name: "Chockles",
       logo: "https://otika.biz.id/wp-content/uploads/2025/02/Mask-group-e1738549093434.webp",
       link: "https://wa.me/6282134065599"
     },
