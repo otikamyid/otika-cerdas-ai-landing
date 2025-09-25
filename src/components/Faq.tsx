@@ -74,6 +74,7 @@ const Faq = () => {
           <li>Konversi mata uang</li>
           <li>Forward pesan ke tim divisi lain</li>
           <li>Bisa multibahasa internasional sesuai kebutuhan</li>
+          <li>Follow Up berseri dengan mempertahankan konteks pembicaraan, bukan template</li>
           <li>Pencatatan Leads secara mendetail</li>
         </ul>
       )
