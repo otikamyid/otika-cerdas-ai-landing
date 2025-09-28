@@ -30,10 +30,10 @@ const Hero = () => {
             <p className="text-lg text-gray-600 mb-8">
               Cukup <span className="font-semibold text-primary">Rp 3000-an/hari</span> setara harga Es Teh 🤭
             </p>
-            <div className="space-x-4 flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button 
                 size="lg" 
-                className="bg-primary hover:bg-primary-600 text-white font-medium px-6 py-3"
+                className="bg-primary hover:bg-primary-600 text-white font-medium px-6 py-3 w-full sm:w-auto"
                 asChild
               >
                 <a href="#pricing">Mulai Sekarang</a>
@@ -41,7 +41,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="border-primary text-primary hover:bg-primary-50 font-medium px-6 py-3"
+                className="border-primary text-primary hover:bg-primary-50 font-medium px-6 py-3 w-full sm:w-auto"
                 asChild
               >
                 <a href="#features">Pelajari Lebih Lanjut</a>
