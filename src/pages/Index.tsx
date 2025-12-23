@@ -1,4 +1,3 @@
-
 import { Suspense, lazy } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -8,6 +7,7 @@ const Clients = lazy(() => import("@/components/Clients"));
 const Features = lazy(() => import("@/components/Features"));
 const Services = lazy(() => import("@/components/Services"));
 const Pricing = lazy(() => import("@/components/Pricing"));
+const ConsultationCta = lazy(() => import("@/components/ConsultationCta"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const Faq = lazy(() => import("@/components/Faq"));
 const Cta = lazy(() => import("@/components/Cta"));
@@ -32,6 +32,9 @@ const Index = () => {
       </Suspense>
       <Suspense fallback={<LoadingFallback />}>
         <Pricing />
+      </Suspense>
+      <Suspense fallback={<LoadingFallback />}>
+        <ConsultationCta />
       </Suspense>
       <Suspense fallback={<LoadingFallback />}>
         <Testimonials />
