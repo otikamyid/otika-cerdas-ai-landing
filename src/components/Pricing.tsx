@@ -80,7 +80,7 @@ const Pricing = () => {
                 <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
                   <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-gray-700">300 pertanyaan/hari</span>
+                <span className="text-gray-700">200 pertanyaan/hari</span>
               </div>
               <div className="flex items-start group">
                 <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
@@ -162,13 +162,13 @@ const Pricing = () => {
                 <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
                   <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-gray-700">Hitung ongkir langsung oleh AI</span>
+                <span className="text-gray-700">Hitung ongkir langsung oleh AI*</span>
               </div>
               <div className="flex items-start group">
                 <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
                   <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-gray-700">Bisa lacak pengiriman langsung oleh AI</span>
+                <span className="text-gray-700">Bisa lacak pengiriman langsung oleh AI*</span>
               </div>
               <div className="flex items-start group">
                 <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
