@@ -47,6 +47,14 @@ const Hero = () => {
                 <a href="#features">Pelajari Lebih Lanjut</a>
               </Button>
             </div>
+            <div className="mt-6 flex items-center gap-3">
+              <img
+                src="/lovable-uploads/meta-tech-provider.png"
+                alt="Meta Tech Provider"
+                className="h-10 w-auto"
+                loading="lazy"
+              />
+            </div>
           </div>
           <div className="relative hidden md:block">
             <img
