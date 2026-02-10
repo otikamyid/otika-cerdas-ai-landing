@@ -40,7 +40,7 @@ const Pricing = () => {
               </div>
               <h3 className="text-3xl font-display font-bold mb-4">Paket SMART</h3>
               <div className="flex justify-center items-end mb-6">
-                <span className="text-6xl font-bold gradient-text">Rp 96k</span>
+                <span className="text-6xl font-bold gradient-text">Rp 99k</span>
                 <span className="text-gray-500 ml-3 text-lg">/ bulan</span>
               </div>
             </div>
