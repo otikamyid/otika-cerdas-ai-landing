@@ -91,7 +91,7 @@ const Pricing = () => {
             </div>
             
             <button className="btn-secondary w-full">
-              <a href="https://otika.myr.id/membership/otika" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                <a href="https://app.otika.biz.id" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                 <span>Pilih Paket</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -191,7 +191,7 @@ const Pricing = () => {
             </div>
             
             <button className="btn-secondary w-full">
-              <a href="https://otika.myr.id/membership/otika" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+              <a href="https://app.otika.biz.id" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                 <span>Pilih Paket</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
