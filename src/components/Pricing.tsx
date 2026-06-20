@@ -40,7 +40,7 @@ const Pricing = () => {
               </div>
               <h3 className="text-3xl font-display font-bold mb-4">Paket SMART</h3>
               <div className="flex justify-center items-end mb-6">
-                <span className="text-6xl font-bold gradient-text">Rp 99k</span>
+                <span className="text-6xl font-bold gradient-text">Rp 149k</span>
                 <span className="text-gray-500 ml-3 text-lg">/ bulan</span>
               </div>
             </div>
@@ -87,6 +87,11 @@ const Pricing = () => {
                   <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
                 <span className="text-gray-700">24 Jam NonStop</span>
+                <div className="flex items-start group">
+                <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
+                  <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
+                </div>
+                <span className="text-gray-700">Tanpa Dashboard Apps</span>
               </div>
             </div>
             
@@ -144,7 +149,7 @@ const Pricing = () => {
                 <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
                   <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-gray-700">Membaca & Mempelajari Data PDF, Google Doc, Spreadsheet, Excel dll</span>
+                <span className="text-gray-700">Membaca & Mempelajari Data PDF, dll</span>
               </div>
               <div className="flex items-start group">
                 <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
@@ -156,19 +161,19 @@ const Pricing = () => {
                 <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
                   <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-gray-700">Bisa Browsing Google</span>
+                <span className="text-gray-700">Exclude Number (list nomor yang tidak dibalas AI)</span>
               </div>
               <div className="flex items-start group">
                 <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
                   <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-gray-700">Hitung ongkir langsung oleh AI*</span>
+                <span className="text-gray-700">Hitung Total Harga oleh AI*</span>
               </div>
               <div className="flex items-start group">
                 <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
                   <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-gray-700">Bisa lacak pengiriman langsung oleh AI*</span>
+                <span className="text-gray-700">Auto Escalation System*</span>
               </div>
               <div className="flex items-start group">
                 <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
@@ -180,7 +185,7 @@ const Pricing = () => {
                 <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors flex-shrink-0 mt-1">
                   <CheckIcon className="h-4 w-4 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-gray-700">Integrasi Woocommerce WordPress</span>
+                <span className="text-gray-700">Penyaring Kata/Kalimat</span>
               </div>
             </div>
             
