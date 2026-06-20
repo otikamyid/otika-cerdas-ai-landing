@@ -28,7 +28,7 @@ const Hero = () => {
               Ubah Alur Penjualan dan Layanan Pelanggan dengan Teknologi AI
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Cukup <span className="font-semibold text-primary">Rp 3000-an/hari</span> setara harga Es Teh 🤭
+              Cukup <span className="font-semibold text-primary">Rp 5000-an/hari</span> setara harga Es Teh 🤭
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button 
