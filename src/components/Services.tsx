@@ -1,4 +1,3 @@
-
 const Services = () => {
   return (
     <section id="services" className="section relative overflow-hidden">
@@ -93,7 +92,7 @@ const Services = () => {
               <span className="gradient-text">CRM Inbox</span>
             </h3>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Layanan CRM Integrasi berbagai platform chat sosmed Anda
+              Layanan CRM Integrasi berbagai platform chat sosmed Anda — sekarang diperkuat dukungan untuk Meta Ads Click-to-WA berdasarkan percakapan.
             </p>
             <div className="space-y-4">
               <div className="flex items-start group">
@@ -120,6 +119,26 @@ const Services = () => {
                 </div>
                 <span className="text-lg text-gray-700">Analisis percakapan dan performa</span>
               </div>
+
+              {/* New: Meta Ads Click-to-WA Support */}
+              <div className="flex items-start group">
+                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
+                  <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h2l1 2 2-4 4 8h6" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <div className="text-lg text-gray-700 font-medium">Meta Ads Click-to-WA berdasarkan percakapan</div>
+                  <div className="text-base text-gray-600 mt-2">
+                    - Otomatis mengarahkan pengguna dari iklan Meta (Facebook/Instagram) ke chat WhatsApp dengan pesan pra-terisi yang disesuaikan menurut konteks iklan atau percakapan.
+                    <br />- Prefill pesan menggunakan parameter iklan (UTM, ad creative) & konteks percakapan sehingga agen/AI langsung paham maksud lead.
+                    <br />- Lead otomatis ditandai, diberi skor, dan di-assign ke agen atau AI bot sesuai aturan routing Anda.
+                    <br />- Tracking konversi dan atribusi iklan (UTM), serta reporting pada dashboard CRM.
+                    <br />- Fallback otomatis ke nomor CS atau form bila agen offline.
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
           
@@ -150,7 +169,9 @@ const Services = () => {
                 <span className="gradient-text">"Bisnis Anda jalan, CS Anda bahagia 🤭"</span>
               </h3>
               <p className="text-lg text-gray-600 max-w-5xl mx-auto leading-relaxed">
-                Kita memahami tidak sepenuhnya bisnis itu semua di-handle oleh AI, Anda juga tetap butuh tenaga manusia untuk handle bisnis Anda. AI tidak menggantikan manusia, tapi membantu pekerjaan manusia dalam konteks ini meringankan beban CS dari sisi <strong className="text-primary">Waktu & Tenaga</strong>. Tentu dalam setiap bisnis output utama adalah <strong className="gradient-text">KONVERSI PENJUALAN meningkat</strong>. Maka dari itu OTIKA menawarkan kemudahan.
+                Kita memahami tidak sepenuhnya bisnis itu semua di-handle oleh AI, Anda juga tetap butuh tenaga manusia untuk handle bisnis Anda. AI tidak menggantikan manusia, tapi membantu pekerjaan[...] 
+                <br />
+                <strong>Tambahan:</strong> Kami memperkuat integrasi iklan Meta (Click-to-WA) agar traffic dari iklan langsung menjadi lead berkualitas di CRM Anda — lengkap dengan prefill pesan, atribusi iklan, routing, dan laporan.
               </p>
             </div>
           </div>
