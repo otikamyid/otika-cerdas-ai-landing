@@ -106,7 +106,7 @@ const Pricing = () => {
           </div>
 
           {/* Pricing Card 2 - Featured */}
-          <div className="pricing-card relative h-full">
+          <div className="pricing-card relative h-full overflow-visible">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
               <span className="bg-gradient-to-r from-orange-400 to-orange-600 text-white text-xs px-4 py-1.5 rounded-full font-bold shadow-lg border border-orange-300">
                 ⭐ POPULER

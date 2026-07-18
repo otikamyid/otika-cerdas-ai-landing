@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="/" className="flex-shrink-0">
               <img
-                className="h-12 w-auto"
+                className="h-9 md:h-10 w-auto object-contain"
                 src="https://otika.biz.id/wp-content/uploads/2024/09/cropped-OTIKA-2.png"
                 alt="Otika Cerdas Indonesia"
               />
