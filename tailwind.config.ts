@@ -33,6 +33,15 @@ export default {
           "Roboto",
           "sans-serif",
         ],
+        display: [
+          "Poppins",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif",
+        ],
       },
       colors: {
         border: "hsl(var(--border))",

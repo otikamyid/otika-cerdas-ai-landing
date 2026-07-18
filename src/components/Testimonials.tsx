@@ -193,16 +193,6 @@ const Testimonials = () => {
               </div>
               <span className="mt-2 text-sm font-medium">WhatsApp</span>
             </div>
-            
-            <div className="flex flex-col items-center">
-              <div className="bg-red-500 text-white p-4 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                  <path fill="white" d="M22 6l-10 7L2 6" />
-                </svg>
-              </div>
-              <span className="mt-2 text-sm font-medium">Email</span>
-            </div>
           </div>
         </div>
       </div>

@@ -76,6 +76,10 @@ const Faq = () => {
           <li>Bisa multibahasa internasional sesuai kebutuhan</li>
           <li>Follow Up berseri dengan mempertahankan konteks pembicaraan, bukan template</li>
           <li>Pencatatan Leads secara mendetail</li>
+          <li>
+            Integrasi iklan Meta (Click-to-WA): traffic dari iklan langsung menjadi lead berkualitas di CRM
+            Anda — lengkap dengan prefill pesan, atribusi iklan, routing, dan laporan
+          </li>
         </ul>
       )
     }

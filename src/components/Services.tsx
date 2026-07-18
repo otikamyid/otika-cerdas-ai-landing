@@ -33,7 +33,7 @@ const Services = () => {
                 <img
                   src="https://images.pexels.com/photos/6153343/pexels-photo-6153343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Automated AI Chatbots"
-                  className="w-full h-[350px] object-cover rounded-2xl"
+                  className="w-full aspect-[16/10] object-cover rounded-2xl"
                   loading="lazy"
                 />
               </div>
@@ -148,7 +148,7 @@ const Services = () => {
                 <img
                   src="https://images.pexels.com/photos/8284724/pexels-photo-8284724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="CRM Inbox"
-                  className="w-full h-[350px] object-cover rounded-2xl"
+                  className="w-full aspect-[16/10] object-cover rounded-2xl"
                   loading="lazy"
                 />
               </div>
@@ -165,9 +165,7 @@ const Services = () => {
                 <span className="gradient-text">"Bisnis Anda jalan, CS Anda bahagia 🤭"</span>
               </h3>
               <p className="text-lg text-gray-600 max-w-5xl mx-auto leading-relaxed">
-                Kita memahami tidak sepenuhnya bisnis itu semua di-handle oleh AI, Anda juga tetap butuh tenaga manusia untuk handle bisnis Anda. AI tidak menggantikan manusia, tapi membantu pekerjaan[...] 
-                <br />
-                <strong>Tambahan:</strong> Kami memperkuat integrasi iklan Meta (Click-to-WA) agar traffic dari iklan langsung menjadi lead berkualitas di CRM Anda — lengkap dengan prefill pesan, atribusi iklan, routing, dan laporan.
+                Kita memahami tidak sepenuhnya bisnis itu semua di-handle oleh AI, Anda juga tetap butuh tenaga manusia untuk handle bisnis Anda. AI tidak menggantikan manusia, tapi membantu pekerjaan Anda.
               </p>
             </div>
           </div>
