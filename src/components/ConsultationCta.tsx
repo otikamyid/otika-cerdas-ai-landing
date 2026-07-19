@@ -60,7 +60,7 @@ const ConsultationCta = () => {
             asChild
           >
             <a 
-              href="https://wa.me/6285799272526?text=Halo%20OTIKA%2C%20saya%20ingin%20konsultasi%20mengenai%20customisasi%20AI%20Agent%20untuk%20bisnis%20saya" 
+              href="https://wa.me/6285117202425?text=Halo%20OTIKA%2C%20saya%20ingin%20konsultasi%20mengenai%20customisasi%20AI%20Agent%20untuk%20bisnis%20saya" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3"
