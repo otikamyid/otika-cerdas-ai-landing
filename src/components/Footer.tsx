@@ -2,6 +2,8 @@
 import { Mail, Instagram, MessageCircle, Facebook } from "lucide-react";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -70,7 +72,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400">© 2025 PT Otika Solusi Nusantara. All rights reserved.</p>
+          <p className="text-gray-400">© {currentYear} PT Otika Solusi Nusantara. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6">
               <li>
