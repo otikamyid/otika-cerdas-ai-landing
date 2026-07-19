@@ -116,7 +116,7 @@ const Pricing = () => {
             <div className="text-center mb-8 pt-4">
               <div className="mb-6">
                 <span className="inline-block px-3 py-1 bg-primary/10 text-primary font-semibold rounded-full text-sm mb-4">
-                  🚀 Pro Plan
+                  🚀 Lite Plan
                 </span>
               </div>
               <h3 className="text-3xl font-display font-bold mb-4">Paket GENIUS</h3>

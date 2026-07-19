@@ -19,17 +19,17 @@ const Footer = () => {
               OTIKA adalah layanan integrasi Customer Service berbasis AI yang membantu bisnis Anda meningkatkan konversi penjualan dan meringankan beban CS Anda.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.instagram.com/otikaindonesia" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                <Instagram className="h-5 w-5" />
+              <a href="https://www.instagram.com/otikaindonesia" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-md">
+                <Instagram className="h-5 w-5" aria-hidden="true" />
               </a>
-              <a href="https://www.threads.com/@otikaindonesia" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                <MessageCircle className="h-5 w-5" />
+              <a href="https://www.threads.com/@otikaindonesia" target="_blank" rel="noopener noreferrer" aria-label="Threads" className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-md">
+                <MessageCircle className="h-5 w-5" aria-hidden="true" />
               </a>
-              <a href="https://web.facebook.com/profile.php?id=61569432026482" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                <Facebook className="h-5 w-5" />
+              <a href="https://web.facebook.com/profile.php?id=61569432026482" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-md">
+                <Facebook className="h-5 w-5" aria-hidden="true" />
               </a>
-              <a href="mailto:hai@otika.biz.id" className="text-gray-300 hover:text-white transition-colors">
-                <Mail className="h-5 w-5" />
+              <a href="mailto:hai@otika.biz.id" aria-label="Email" className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-md">
+                <Mail className="h-5 w-5" aria-hidden="true" />
               </a>
             </div>
           </div>

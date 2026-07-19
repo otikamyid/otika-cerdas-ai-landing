@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useId } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 interface FaqItemProps {
@@ -10,25 +10,38 @@ interface FaqItemProps {
 }
 
 const FaqItem: React.FC<FaqItemProps> = ({ question, answer, isOpen, toggle }) => {
+  const reactId = useId();
+  const buttonId = `faq-button-${reactId}`;
+  const panelId = `faq-panel-${reactId}`;
+
   return (
     <div className="faq-item">
       <button
-        className="flex justify-between items-center w-full text-left py-3 focus:outline-none"
+        className="flex justify-between items-center w-full text-left py-3 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
         onClick={toggle}
+        aria-expanded={isOpen}
+        aria-controls={panelId}
+        id={buttonId}
       >
         <h4 className="text-lg font-medium">{question}</h4>
         {isOpen ? (
-          <ChevronUp className="h-5 w-5 text-gray-500" />
+          <ChevronUp className="h-5 w-5 text-gray-500 shrink-0" aria-hidden="true" />
         ) : (
-          <ChevronDown className="h-5 w-5 text-gray-500" />
+          <ChevronDown className="h-5 w-5 text-gray-500 shrink-0" aria-hidden="true" />
         )}
       </button>
+      {/* grid-rows technique: sizes to content height exactly, so long answers never clip */}
       <div
-        className={`transition-all duration-300 overflow-hidden ${
-          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        className={`grid transition-all duration-300 ease-in-out ${
+          isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
         }`}
+        id={panelId}
+        role="region"
+        aria-labelledby={buttonId}
       >
-        <div className="py-3 text-gray-600">{answer}</div>
+        <div className="overflow-hidden">
+          <div className="py-3 text-gray-600">{answer}</div>
+        </div>
       </div>
     </div>
   );

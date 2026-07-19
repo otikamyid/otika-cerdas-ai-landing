@@ -43,8 +43,11 @@ const Clients = () => {
     }
   ];
 
+  // Duplicate the list so the track can loop seamlessly (translateX -50%).
+  const loop = [...clients, ...clients];
+
   return (
-    <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+    <section className="py-16 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Dipercaya oleh</h2>
@@ -52,20 +55,24 @@ const Clients = () => {
             Berbagai perusahaan dan organisasi telah mempercayai layanan kami untuk mengembangkan bisnis mereka
           </p>
         </div>
-        
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 lg:gap-8 max-w-6xl mx-auto">
-          {clients.map((client, index) => (
-            <a 
-              key={index} 
-              href={client.link} 
-              target="_blank" 
+      </div>
+
+      {/* Logo marquee — auto-scrolls horizontally, fades at the edges, pauses on hover */}
+      <div className="relative overflow-hidden logo-fade">
+        <div className="flex w-max gap-6 lg:gap-8 animate-marquee">
+          {loop.map((client, index) => (
+            <a
+              key={index}
+              href={client.link}
+              target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col items-center justify-center p-6 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 border border-gray-100 min-h-[160px]"
+              aria-label={`${client.name} (buka situs)`}
+              className="group flex flex-col items-center justify-center px-6 py-5 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100 min-w-[210px] min-h-[150px]"
             >
               <div className="w-16 h-16 lg:w-20 lg:h-20 mb-3 rounded-full overflow-hidden bg-gray-50 flex items-center justify-center p-2 flex-shrink-0">
-                <img 
-                  src={client.logo} 
-                  alt={client.name} 
+                <img
+                  src={client.logo}
+                  alt={client.name}
                   className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
@@ -76,7 +83,9 @@ const Clients = () => {
             </a>
           ))}
         </div>
-        
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mt-12">
           <p className="text-gray-500 text-sm">
             Bergabunglah dengan klien-klien terpercaya kami
