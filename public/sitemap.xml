@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://otika.biz.id/</loc><priority>1.0</priority></url>
+  <url><loc>https://otika.biz.id/fitur/whatsapp-api</loc><priority>0.8</priority></url>
+  <url><loc>https://otika.biz.id/fitur/whatsapp-coexistence</loc><priority>0.8</priority></url>
+  <url><loc>https://otika.biz.id/fitur/ai-agent</loc><priority>0.8</priority></url>
+  <url><loc>https://otika.biz.id/fitur/follow-up-ai</loc><priority>0.8</priority></url>
+  <url><loc>https://otika.biz.id/fitur/broadcast-whatsapp</loc><priority>0.8</priority></url>
   <url><loc>https://otika.biz.id/kebijakan-privasi</loc><priority>0.3</priority></url>
   <url><loc>https://otika.biz.id/syarat-ketentuan</loc><priority>0.3</priority></url>
   <url><loc>https://otika.biz.id/kebijakan-penggunaan</loc><priority>0.3</priority></url>
