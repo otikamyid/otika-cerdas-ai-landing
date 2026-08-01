@@ -1,55 +1,33 @@
-import { Suspense, lazy } from "react";
-import Navbar from "@/components/Navbar";
+import ChannelFlow from "@/components/ChannelFlow";
+import Clients from "@/components/Clients";
+import ConsultationCta from "@/components/ConsultationCta";
+import Cta from "@/components/Cta";
+import Faq from "@/components/Faq";
+import Features from "@/components/Features";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import Pricing from "@/components/Pricing";
+import Seo from "@/components/Seo";
+import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
 
-// Lazy load components that aren't immediately visible
-const Clients = lazy(() => import("@/components/Clients"));
-const Features = lazy(() => import("@/components/Features"));
-const Services = lazy(() => import("@/components/Services"));
-const Pricing = lazy(() => import("@/components/Pricing"));
-const ConsultationCta = lazy(() => import("@/components/ConsultationCta"));
-const Testimonials = lazy(() => import("@/components/Testimonials"));
-const Faq = lazy(() => import("@/components/Faq"));
-const Cta = lazy(() => import("@/components/Cta"));
-const Footer = lazy(() => import("@/components/Footer"));
-
-// Simple loading component
-const LoadingFallback = () => <div className="min-h-16 w-full bg-gray-50"></div>;
-
-const Index = () => {
-  return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <Hero />
-      <Suspense fallback={<LoadingFallback />}>
-        <Clients />
-      </Suspense>
-      <Suspense fallback={<LoadingFallback />}>
-        <Features />
-      </Suspense>
-      <Suspense fallback={<LoadingFallback />}>
-        <Services />
-      </Suspense>
-      <Suspense fallback={<LoadingFallback />}>
-        <Pricing />
-      </Suspense>
-      <Suspense fallback={<LoadingFallback />}>
-        <ConsultationCta />
-      </Suspense>
-      <Suspense fallback={<LoadingFallback />}>
-        <Testimonials />
-      </Suspense>
-      <Suspense fallback={<LoadingFallback />}>
-        <Faq />
-      </Suspense>
-      <Suspense fallback={<LoadingFallback />}>
-        <Cta />
-      </Suspense>
-      <Suspense fallback={<LoadingFallback />}>
-        <Footer />
-      </Suspense>
-    </div>
-  );
-};
+const Index = () => <div className="min-h-screen bg-white">
+  <Seo title="Customize AI Agent WhatsApp & Instagram | OTIKA" description="AI Agent yang disesuaikan dengan produk, SOP, gaya komunikasi, dan alur bisnis Anda. Konsultasi integrasi WhatsApp dan Instagram bersama Otika." />
+  <Navbar />
+  <main>
+    <Hero />
+    <Clients />
+    <Features />
+    <ChannelFlow />
+    <Services />
+    <Pricing />
+    <ConsultationCta />
+    <Testimonials />
+    <Faq />
+    <Cta />
+  </main>
+  <Footer />
+</div>;
 
 export default Index;

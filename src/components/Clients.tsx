@@ -8,7 +8,7 @@ const Clients = () => {
     },
     {
       name: "Fit Motor Tegal",
-      logo: "/lovable-uploads/75122380-2821-4162-a300-869d7f57e0f7.png",
+      logo: "/assets/75122380-2821-4162-a300-869d7f57e0f7.png",
       link: "https://fitmotor.web.id"
     },
     {
@@ -38,7 +38,7 @@ const Clients = () => {
     },
     {
       name: "Warung Rupa Rupa Japan",
-      logo: "/lovable-uploads/warung-rupa-rupa-logo.png",
+      logo: "/assets/warung-rupa-rupa-logo.png",
       link: "https://bit.ly/Katalog_2025_Januari"
     }
   ];

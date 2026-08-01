@@ -1,75 +1,32 @@
+import { consultationUrl } from "@/lib/site";
+import { ArrowRight, CheckCircle2, MessageCircle } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-
-const Hero = () => {
-  return (
-    <section className="relative pt-16 pb-24 overflow-hidden">
-      {/* Background image with overlay */}
-      <div className="absolute inset-0 w-full h-full z-0">
-        <img
-          src="lovable-uploads/db0473d1-cbfb-4882-b526-04b00053cc6e.png"
-          alt="Background"
-          className="w-full h-full object-cover object-center opacity-20"
-          loading="lazy"
-          width="1920"
-          height="1080"
-        />
-        <div className="absolute inset-0 bg-white/85"></div>
-      </div>
-      
-      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="text-left animate-fade-up">
-            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
-              <span className="text-black">Customize </span>
-              <span className="text-primary">AI Chatbot</span>
-            </h1>
-            <h2 className="text-2xl md:text-3xl text-gray-700 mb-6 font-medium">
-              Ubah Alur Penjualan dan Layanan Pelanggan dengan Teknologi AI
-            </h2>
-            <p className="text-lg text-gray-600 mb-8">
-              Cukup <span className="font-semibold text-primary">Rp 5000-an/hari</span> setara harga Es Teh 🤭
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <Button 
-                size="lg" 
-                className="bg-primary hover:bg-primary-600 text-white font-medium px-6 py-3 w-full sm:w-auto"
-                asChild
-              >
-                <a href="#pricing">Mulai Sekarang</a>
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-primary text-primary hover:bg-primary-50 font-medium px-6 py-3 w-full sm:w-auto"
-                asChild
-              >
-                <a href="#features">Pelajari Lebih Lanjut</a>
-              </Button>
-            </div>
-            <div className="mt-6 flex items-center gap-3">
-              <img
-                src="/lovable-uploads/meta-tech-provider.png"
-                alt="Meta Tech Provider"
-                className="h-10 w-auto"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div className="relative hidden md:block">
-            <img
-              src="/lovable-uploads/Hero Image OTIKA (1).webp"
-              alt="Otika AI Chat Assistant"
-              className="mx-auto max-w-full h-auto animate-fade-in"
-              loading="lazy"
-              width="600"
-              height="600"
-            />
-          </div>
+const Hero = () => (
+  <section className="hero-section">
+    <div className="hero-glow" />
+    <div className="container relative mx-auto grid items-center gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:py-28 lg:px-8">
+      <div className="animate-fade-up">
+        <span className="eyebrow"><span className="h-2 w-2 rounded-full bg-emerald-500" /> Customize AI Agent untuk bisnismu</span>
+        <h1 className="mt-6 text-4xl font-bold leading-[1.08] text-slate-950 md:text-5xl lg:text-6xl">Bukan chatbot template. <span className="gradient-text">Ini AI Agent punya bisnismu.</span></h1>
+        <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">Otika mempelajari produk, SOP, gaya bicara, sampai alur closing bisnis Anda—lalu membuat AI Agent yang siap melayani lewat WhatsApp dan Instagram.</p>
+        <p className="mt-4 font-semibold text-slate-800">Mulai Rp5.000-an per hari. Kurang lebih setara es teh, tapi yang ini bisa bantu balas pelanggan 24 jam.</p>
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a className="btn-primary gap-2" href={consultationUrl("hero")} target="_blank" rel="noreferrer"><MessageCircle className="h-5 w-5" /> Konsultasikan Bisnis Saya</a>
+          <a className="btn-secondary gap-2" href="#cara-kerja">Lihat Cara Kerja <ArrowRight className="h-4 w-4" /></a>
+        </div>
+        <div className="mt-8 flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-600">
+          {["Konsultasi gratis", "Dibantu setup", "Handover ke admin"].map(item => <span className="flex items-center gap-2" key={item}><CheckCircle2 className="h-4 w-4 text-emerald-500" />{item}</span>)}
         </div>
       </div>
-    </section>
-  );
-};
+      <div className="relative hidden md:block">
+        <div className="absolute inset-8 rounded-full bg-primary/20 blur-3xl" />
+        <img src="/assets/Hero Image OTIKA (1).webp" alt="Ilustrasi AI Agent Otika" className="relative mx-auto w-full max-w-[560px] animate-float" width="600" height="600" fetchPriority="high" />
+        <div className="absolute bottom-8 left-2 rounded-2xl border border-white bg-white/90 p-4 shadow-xl backdrop-blur">
+          <p className="text-xs text-slate-500">Status AI Agent</p><p className="mt-1 font-bold text-emerald-600">● Siap balas pelanggan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+);
 
 export default Hero;

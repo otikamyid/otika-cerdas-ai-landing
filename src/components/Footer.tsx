@@ -1,92 +1,23 @@
+import { site, consultationUrl } from "@/lib/site";
+import { Instagram, Mail, MessageCircle } from "lucide-react";
 
-import { Mail, Instagram, MessageCircle, Facebook } from "lucide-react";
-
-const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-2">
-            <img
-              src="https://otika.biz.id/wp-content/uploads/2024/09/cropped-OTIKA-2.png"
-              alt="Otika Cerdas Indonesia"
-              className="h-12 w-auto mb-4"
-              loading="lazy"
-            />
-            <p className="text-gray-300 mb-4 max-w-md">
-              OTIKA adalah layanan integrasi Customer Service berbasis AI yang membantu bisnis Anda meningkatkan konversi penjualan dan meringankan beban CS Anda.
-            </p>
-            <div className="flex space-x-4">
-              <a href="https://www.instagram.com/otikaindonesia" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-md">
-                <Instagram className="h-5 w-5" aria-hidden="true" />
-              </a>
-              <a href="https://www.threads.com/@otikaindonesia" target="_blank" rel="noopener noreferrer" aria-label="Threads" className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-md">
-                <MessageCircle className="h-5 w-5" aria-hidden="true" />
-              </a>
-              <a href="https://web.facebook.com/profile.php?id=61569432026482" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-md">
-                <Facebook className="h-5 w-5" aria-hidden="true" />
-              </a>
-              <a href="mailto:hai@otika.biz.id" aria-label="Email" className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-md">
-                <Mail className="h-5 w-5" aria-hidden="true" />
-              </a>
-            </div>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-medium mb-4">Layanan</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">AI Chatbot</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">WhatsApp Integration</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">CRM Inbox</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Custom Solutions</a>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-medium mb-4">Kontak</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="https://chat.whatsapp.com/B9l4tLwJoWNHPAfP8bllre" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Grup WhatsApp</a>
-              </li>
-              <li>
-                <a href="https://wa.me/6285117202425" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">WhatsApp: 0851-1720-2425</a>
-              </li>
-              <li>
-                <a href="mailto:hai@otika.biz.id" className="text-gray-300 hover:text-white transition-colors">hai@otika.biz.id</a>
-              </li>
-              <li>
-                <a href="https://otika.biz.id" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">otika.biz.id</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400">© {currentYear} PT Otika Solusi Nusantara. All rights reserved.</p>
-          <div className="mt-4 md:mt-0">
-            <ul className="flex space-x-6">
-              <li>
-                <a href="https://otika.biz.id/privacy-policy/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Terms of Service</a>
-              </li>
-            </ul>
-          </div>
+const Footer = () => <footer className="bg-slate-950 text-white">
+  <div className="container mx-auto px-4 py-14 sm:px-6 lg:px-8">
+    <div className="grid gap-10 md:grid-cols-4">
+      <div className="md:col-span-2">
+        <a href="/" className="text-2xl font-extrabold text-sky-400">OTIKA</a>
+        <p className="mt-4 max-w-md leading-relaxed text-slate-400">Customize AI Agent untuk membantu bisnis melayani pelanggan, menyaring prospek, dan menjaga percakapan tetap berjalan melalui WhatsApp dan Instagram.</p>
+        <div className="mt-5 flex gap-4">
+          <a href={site.instagram} target="_blank" rel="noreferrer" aria-label="Instagram Otika"><Instagram className="h-5 w-5" /></a>
+          <a href={`mailto:${site.email}`} aria-label="Email Otika"><Mail className="h-5 w-5" /></a>
+          <a href={consultationUrl("footer")} target="_blank" rel="noreferrer" aria-label="WhatsApp Otika"><MessageCircle className="h-5 w-5" /></a>
         </div>
       </div>
-    </footer>
-  );
-};
+      <div><h2 className="text-base font-semibold">Jelajahi</h2><ul className="mt-4 space-y-3 text-sm text-slate-400"><li><a href="/#features">Fitur</a></li><li><a href="/#channels">Channel</a></li><li><a href="/#pricing">Harga</a></li><li><a href="/#testimonials">Klien & Testimoni</a></li></ul></div>
+      <div><h2 className="text-base font-semibold">Perusahaan</h2><ul className="mt-4 space-y-3 text-sm text-slate-400"><li><a href="/kebijakan-privasi">Kebijakan Privasi</a></li><li><a href="/syarat-ketentuan">Syarat & Ketentuan</a></li><li><a href="/kebijakan-penggunaan">Kebijakan Penggunaan</a></li><li><a href={`mailto:${site.email}`}>{site.email}</a></li></ul></div>
+    </div>
+    <div className="mt-12 border-t border-slate-800 pt-7 text-sm text-slate-500">© {new Date().getFullYear()} {site.legalName}. Seluruh hak cipta dilindungi.</div>
+  </div>
+</footer>;
 
 export default Footer;

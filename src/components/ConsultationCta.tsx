@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Calendar, MessageSquare, Zap } from "lucide-react";
 
 const ConsultationCta = () => {
@@ -54,24 +53,18 @@ const ConsultationCta = () => {
           </div>
 
           {/* CTA Button */}
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-            asChild
-          >
-            <a 
+          <a
               href="https://wa.me/6285117202425?text=Halo%20OTIKA%2C%20saya%20ingin%20konsultasi%20mengenai%20customisasi%20AI%20Agent%20untuk%20bisnis%20saya" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3"
+              className="btn-primary inline-flex items-center gap-3 px-8 py-4 text-lg"
             >
               <Calendar className="w-5 h-5" />
               Jadwalkan Konsultasi Gratis
             </a>
-          </Button>
           
           <p className="text-sm text-muted-foreground mt-4">
-            Konsultasi gratis tanpa kewajiban • Respon dalam 1x24 jam
+            Konsultasi gratis tanpa kewajiban • Respons dalam 1x24 jam
           </p>
         </div>
       </div>

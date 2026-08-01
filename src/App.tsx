@@ -1,27 +1,17 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import LegalPage from "./pages/LegalPage";
 import NotFound from "./pages/NotFound";
+import type { ReactElement } from "react";
 
-const queryClient = new QueryClient();
+const routes: Record<string, ReactElement> = {
+  "/": <Index />,
+  "/kebijakan-privasi": <LegalPage type="privacy" />,
+  "/syarat-ketentuan": <LegalPage type="terms" />,
+  "/kebijakan-penggunaan": <LegalPage type="acceptable-use" />,
+};
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const normalizePath = (path: string) => path.length > 1 ? path.replace(/\/$/, "") : path;
+
+const App = () => routes[normalizePath(window.location.pathname)] ?? <NotFound />;
 
 export default App;

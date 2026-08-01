@@ -1,178 +1,31 @@
-const Services = () => {
-  return (
-    <section id="services" className="section relative overflow-hidden">
-      {/* Modern Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-50/20 to-white"></div>
-      <div className="absolute top-40 right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 left-20 w-80 h-80 bg-primary-300/8 rounded-full blur-3xl"></div>
-      
-      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
-          <div className="mb-6">
-            <span className="inline-block px-4 py-2 bg-primary/10 text-primary font-semibold rounded-full text-sm border border-primary/20 mb-6">
-              💼 Layanan Kami
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-8">
-            <span className="text-gray-900">Layanan Utama</span><br />
-            <span className="gradient-text">dari OTIKA</span>
-          </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Membantu Alur Penjualan dan Layanan Pelanggan sehingga pekerjaan CS Anda jadi ringan
-          </p>
-        </div>
+import { BookOpen, Bot, MessagesSquare, RefreshCw, UserRoundCheck, WandSparkles } from "lucide-react";
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
-          <div className="order-2 lg:order-1">
-            <div className="relative">
-              {/* Glow effect behind image */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary-300/10 rounded-3xl blur-2xl scale-110"></div>
-              
-              {/* Modern glass frame */}
-              <div className="relative bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-3xl p-4 shadow-2xl float-animation">
-                <img
-                  src="https://images.pexels.com/photos/6153343/pexels-photo-6153343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Automated AI Chatbots"
-                  className="w-full aspect-[16/10] object-cover rounded-2xl"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-          
-          <div className="order-1 lg:order-2">
-            <div className="mb-6">
-              <span className="inline-block px-3 py-1 bg-primary/10 text-primary font-semibold rounded-full text-sm mb-4">
-                🤖 AI Powered
-              </span>
-            </div>
-            <h3 className="text-3xl md:text-4xl font-display font-bold mb-6">
-              <span className="gradient-text">Automated AI Chatbots</span>
-            </h3>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Layanan chat untuk membantu proses penjualan dan layanan pelanggan berbasis AI yang bahasanya nggak kaku seperti bot!
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-start group">
-                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
-                  <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <span className="text-lg text-gray-700">Berkomunikasi seperti manusia</span>
-              </div>
-              <div className="flex items-start group">
-                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
-                  <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <span className="text-lg text-gray-700">Mampu mengirim gambar katalog produk</span>
-              </div>
-              <div className="flex items-start group">
-                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
-                  <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <span className="text-lg text-gray-700">Bekerja 24/7 tanpa lelah</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
-          <div>
-            <div className="mb-6">
-              <span className="inline-block px-3 py-1 bg-primary/10 text-primary font-semibold rounded-full text-sm mb-4">
-                📊 CRM System
-              </span>
-            </div>
-            <h3 className="text-3xl md:text-4xl font-display font-bold mb-6">
-              <span className="gradient-text">CRM Inbox</span>
-            </h3>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Layanan CRM Integrasi berbagai platform chat sosmed Anda
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-start group">
-                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
-                  <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <span className="text-lg text-gray-700">Kelola semua pesan dari berbagai platform</span>
-              </div>
-              <div className="flex items-start group">
-                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
-                  <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <span className="text-lg text-gray-700">Tampilan antarmuka yang mudah digunakan</span>
-              </div>
-              <div className="flex items-start group">
-                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
-                  <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <span className="text-lg text-gray-700">Analisis percakapan dan performa</span>
-              </div>
+const steps = [
+  { icon: MessagesSquare, title: "Cerita dulu soal bisnismu", text: "Tim Otika memetakan produk, pertanyaan pelanggan, SOP, dan bagian yang paling menyita waktu admin." },
+  { icon: BookOpen, title: "Susun knowledge & alur", text: "Katalog, FAQ, gaya bicara, kualifikasi prospek, serta kapan AI harus menyerahkan chat ke manusia disiapkan bersama." },
+  { icon: WandSparkles, title: "Kami customize AI Agent", text: "AI dikonfigurasi dan diuji untuk WhatsApp atau Instagram—bukan dilepas dengan jawaban template seadanya." },
+  { icon: RefreshCw, title: "Evaluasi dan bertumbuh", text: "Jawaban dapat disempurnakan mengikuti produk, promo, dan kebutuhan operasional bisnis yang berubah." },
+];
 
-              {/* New: Meta Ads Click-to-WA Block (SIMPLE) */}
-              <div className="flex items-start group">
-                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
-                  <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h2l1 2 2-4 4 8h6" />
-                  </svg>
-                </div>
-                <div className="flex-1">
-                  <div className="text-lg text-gray-700 font-medium">Meta Ads Click-to-WA berdasarkan percakapan</div>
-                  <div className="text-base text-gray-600 mt-2">
-                    Integrasi Click-to-WA untuk mengarahkan traffic Meta Ads langsung ke WhatsApp dengan pesan pra-terisi berdasarkan konteks.
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          
-          <div>
-            <div className="relative">
-              {/* Glow effect behind image */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary-300/10 rounded-3xl blur-2xl scale-110"></div>
-              
-              {/* Modern glass frame */}
-              <div className="relative bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-3xl p-4 shadow-2xl float-animation" style={{animationDelay: '2s'}}>
-                <img
-                  src="https://images.pexels.com/photos/8284724/pexels-photo-8284724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="CRM Inbox"
-                  className="w-full aspect-[16/10] object-cover rounded-2xl"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="text-center">
-          <div className="relative bg-gradient-to-br from-white/40 to-white/20 backdrop-blur-xl border border-white/30 rounded-3xl p-12 shadow-2xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary-300/5 rounded-3xl blur-xl"></div>
-            <div className="relative z-10">
-              <h3 className="text-3xl md:text-4xl font-display font-bold mb-8">
-                <span className="text-gray-900">Tujuan kita adalah membuat</span><br />
-                <span className="gradient-text">"Bisnis Anda jalan, CS Anda bahagia 🤭"</span>
-              </h3>
-              <p className="text-lg text-gray-600 max-w-5xl mx-auto leading-relaxed">
-                Kita memahami tidak sepenuhnya bisnis itu semua di-handle oleh AI, Anda juga tetap butuh tenaga manusia untuk handle bisnis Anda. AI tidak menggantikan manusia, tapi membantu pekerjaan Anda.
-              </p>
-            </div>
-          </div>
-        </div>
+const Services = () => <section id="cara-kerja" className="section bg-white">
+  <div className="container-tight">
+    <div className="mx-auto max-w-3xl text-center">
+      <span className="eyebrow">Cara kerja Otika</span>
+      <h2 className="mt-4">AI-nya belajar bisnis Anda, bukan Anda yang dipaksa mengikuti template</h2>
+      <p className="mt-5 text-lg text-slate-600">Kami bantu dari pemetaan kebutuhan sampai AI Agent siap berbicara dengan pelanggan.</p>
+    </div>
+    <div className="mt-14 grid gap-5 md:grid-cols-2">
+      {steps.map((step, index) => <article className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm" key={step.title}>
+        <div className="flex items-start gap-5"><span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-sky-50 text-primary"><step.icon /></span><div><span className="text-xs font-bold uppercase tracking-widest text-primary">Langkah {index + 1}</span><h3 className="mt-2 text-xl font-bold">{step.title}</h3><p className="mt-3 leading-relaxed text-slate-600">{step.text}</p></div></div>
+      </article>)}
+    </div>
+    <div className="mt-14 grid gap-5 rounded-3xl bg-slate-950 p-8 text-white md:grid-cols-3 md:p-10">
+      <div className="md:col-span-1"><Bot className="h-10 w-10 text-sky-400" /><h3 className="mt-5 text-2xl font-bold">AI membantu. Manusia tetap memegang kendali.</h3></div>
+      <div className="grid gap-4 md:col-span-2 sm:grid-cols-2">
+        {["Jawab FAQ & detail produk", "Kualifikasi kebutuhan prospek", "Kirim informasi yang relevan", "Handover ke admin saat dibutuhkan"].map(item => <div className="flex gap-3 rounded-xl bg-white/5 p-4" key={item}><UserRoundCheck className="h-5 w-5 shrink-0 text-emerald-400" /><span>{item}</span></div>)}
       </div>
-    </section>
-  );
-};
+    </div>
+  </div>
+</section>;
 
 export default Services;

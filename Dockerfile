@@ -1,25 +1,13 @@
-# Step 1: Build the application using Node.js
-FROM node:18 AS builder
-
+FROM node:20-alpine AS builder
 WORKDIR /app
-
-# Copy all project files
+COPY package.json package-lock.json ./
+RUN npm ci
 COPY . .
-
-# Install dependencies
-RUN npm install
-
-# Build the project for production
 RUN npm run build
 
-# Step 2: Serve the static files using Nginx
-FROM nginx:alpine
-
-# Copy built files from builder to Nginx web directory
+FROM nginx:1.27-alpine
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/dist /usr/share/nginx/html
-
-# Expose default Nginx port
 EXPOSE 80
-
-# Start Nginx
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 CMD wget -qO- http://127.0.0.1/health || exit 1
 CMD ["nginx", "-g", "daemon off;"]

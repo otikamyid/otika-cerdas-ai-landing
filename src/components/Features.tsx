@@ -9,14 +9,14 @@ import {
 
 const Features = () => {
   return (
-    <section id="features" className="section bg-white">
+    <section id="features" className="section bg-white scroll-mt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl font-bold mb-4">
             Balas Ratusan Chat Sampai Closing Full Autopilot!
           </h2>
           <p className="text-lg text-gray-600 mt-4">
-            Otika adalah Layanan Jasa Integrasi Customer Service Berbasis AI (Artificial Intelligence) dengan WhatsApp dan berbagai aplikasi pesan singkat yang bekerja seperti CS Manusia.
+            Otika mengintegrasikan AI Agent yang disesuaikan dengan bisnis Anda melalui WhatsApp dan Instagram, lalu membantu admin menangani percakapan seperti rekan kerja digital.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ const Features = () => {
             </div>
             <h3 className="text-xl font-semibold mb-3">Integrasi Mudah</h3>
             <p className="text-gray-600">
-              Pasang pada WhatsApp biasa maupun WhatsApp Bisnis dengan cepat dan langsung bisa digunakan.
+              Terhubung ke WhatsApp dan Instagram dengan proses setup yang dibantu oleh tim Otika.
             </p>
           </div>
 

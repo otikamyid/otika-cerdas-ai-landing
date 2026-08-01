@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
+# OTIKA — Customize AI Agent
 
-## Project info
+Website resmi PT Otika Solusi Nusantara untuk memperkenalkan layanan Customize AI Agent melalui WhatsApp dan Instagram.
 
-**URL**: https://lovable.dev/projects/0ebf37f8-14c7-4d9b-900c-3eb9d92f4e9d
+## Teknologi
 
-## How can I edit this code?
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Nginx untuk container production
 
-There are several ways of editing your application.
+## Menjalankan secara lokal
 
-**Use Lovable**
+Pastikan Node.js 20 atau versi LTS yang kompatibel sudah tersedia.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0ebf37f8-14c7-4d9b-900c-3eb9d92f4e9d) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm ci
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Server development berjalan pada `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Pemeriksaan sebelum deploy
 
-**Use GitHub Codespaces**
+```bash
+npm run lint
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Hasil build production tersimpan di folder `dist`.
 
-## What technologies are used for this project?
+## Deploy ke Vercel
 
-This project is built with:
+Repository sudah menyediakan `vercel.json` untuk menangani clean URL, cache aset, dan fallback halaman.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Konfigurasi build:
 
-## How can I deploy this project?
+```text
+Framework Preset : Vite
+Build Command    : npm run build
+Output Directory : dist
+Install Command  : npm ci
+```
 
-Simply open [Lovable](https://lovable.dev/projects/0ebf37f8-14c7-4d9b-900c-3eb9d92f4e9d) and click on Share -> Publish.
+## Deploy ke Docker atau Easypanel
 
-## Can I connect a custom domain to my Lovable project?
+`Dockerfile` menggunakan multi-stage build Node.js dan Nginx. Nginx sudah dikonfigurasi untuk melayani aset statis, route halaman legal, dan endpoint health check `/health`.
 
-Yes, you can!
+```bash
+docker build -t otika-landing .
+docker run --rm -p 8080:80 otika-landing
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Pada Easypanel, gunakan deployment dari repository dan arahkan domain ke port container `80`.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Halaman
+
+- `/` — Landing page
+- `/kebijakan-privasi`
+- `/syarat-ketentuan`
+- `/kebijakan-penggunaan`
+
+## Kontak
+
+- Website: https://otika.biz.id
+- Email: hai@otika.biz.id
+- WhatsApp: 0851-1720-2425
+
+© PT Otika Solusi Nusantara.

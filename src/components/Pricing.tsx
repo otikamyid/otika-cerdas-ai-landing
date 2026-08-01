@@ -1,5 +1,5 @@
 import { CheckIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { consultationUrl } from "@/lib/site";
 
 const Pricing = () => {
   return (
@@ -95,14 +95,12 @@ const Pricing = () => {
               </div>
             </div>
             
-            <button className="btn-secondary w-full">
-                <a href="https://app.otika.biz.id" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+            <a href={consultationUrl("paket SMART")} target="_blank" rel="noopener noreferrer" className="btn-secondary w-full gap-2">
                 <span>Pilih Paket</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
-              </a>
-            </button>
+            </a>
           </div>
 
           {/* Pricing Card 2 - Featured */}
@@ -183,14 +181,12 @@ const Pricing = () => {
               </div>
             </div>
             
-            <button className="btn-secondary w-full">
-              <a href="https://app.otika.biz.id" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+            <a href={consultationUrl("paket GENIUS")} target="_blank" rel="noopener noreferrer" className="btn-secondary w-full gap-2">
                 <span>Pilih Paket</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
-              </a>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -209,14 +205,12 @@ const Pricing = () => {
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Paket ini memungkinkan Admin AI Anda menjadi super Bot menyesuaikan kebutuhan tugas admin Anda yang sangat kompleks. Custom serumit apapun akan kita laksanakan.
               </p>
-              <button className="btn-primary">
-                <a href="https://wa.me/6285117202425" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a href={consultationUrl("custom request")} target="_blank" rel="noopener noreferrer" className="btn-primary gap-2">
                   <span>Request Fitur!</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
-                </a>
-              </button>
+              </a>
             </div>
           </div>
         </div>
