@@ -10,6 +10,10 @@ const Hero = () => (
         <h1 className="mt-6 text-4xl font-bold leading-[1.08] text-slate-950 md:text-5xl lg:text-6xl">Bukan chatbot template. <span className="gradient-text">Ini AI Agent punya bisnismu.</span></h1>
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">Otika mempelajari produk, SOP, gaya bicara, sampai alur closing bisnis Anda—lalu membuat AI Agent yang siap melayani lewat WhatsApp dan Instagram.</p>
         <p className="mt-4 font-semibold text-slate-800">Mulai Rp5.000-an per hari. Kurang lebih setara es teh, tapi yang ini bisa bantu balas pelanggan 24 jam.</p>
+        <div className="mt-6 inline-flex items-center gap-4 rounded-2xl border border-slate-200 bg-white/90 px-4 py-3 shadow-sm backdrop-blur">
+          <img src="/assets/meta-tech-provider.png" alt="Meta Tech Provider" className="h-12 w-auto object-contain" width="102" height="60" />
+          <div><p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Kepercayaan resmi</p><p className="mt-1 text-sm font-bold text-slate-900">OTIKA resmi menjadi Meta Tech Provider</p></div>
+        </div>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <a className="btn-primary gap-2" href={consultationUrl("hero")} target="_blank" rel="noreferrer"><MessageCircle className="h-5 w-5" /> Konsultasikan Bisnis Saya</a>
           <a className="btn-secondary gap-2" href="#cara-kerja">Lihat Cara Kerja <ArrowRight className="h-4 w-4" /></a>

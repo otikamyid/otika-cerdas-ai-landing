@@ -10,7 +10,10 @@ const Navbar = ({ compact = false }: { compact?: boolean }) => {
   const [open, setOpen] = useState(false);
   return <nav className="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-xl">
     <div className="container mx-auto flex h-[72px] items-center justify-between px-4 sm:px-6 lg:px-8">
-      <a href="/" className="text-xl font-extrabold tracking-tight text-primary" aria-label="OTIKA beranda">OTIKA</a>
+      <a href="/" className="flex items-center gap-2" aria-label="OTIKA beranda">
+        <img src="/assets/otika-logo.png" alt="" className="h-11 w-11 scale-150 object-contain" width="44" height="44" />
+        <span className="text-xl font-extrabold tracking-tight text-primary">OTIKA</span>
+      </a>
       {!compact && <div className="hidden items-center gap-1 md:flex">
         {links.map(([label, href]) => <a className="nav-link" href={href} key={href}>{label}</a>)}
       </div>}
