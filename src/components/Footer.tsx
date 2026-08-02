@@ -5,8 +5,8 @@ const Footer = () => <footer className="bg-slate-950 text-white">
   <div className="container mx-auto px-4 py-14 sm:px-6 lg:px-8">
     <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
       <div className="md:col-span-2">
-        <a href="/" className="inline-flex items-center gap-2 rounded-xl bg-white px-3 py-2" aria-label="OTIKA beranda">
-          <img src="/assets/otika-wordmark.png" alt="OTIKA" className="h-auto w-36 object-contain" width="144" height="68" loading="lazy" />
+        <a href="/" className="inline-flex items-center" aria-label="OTIKA beranda">
+          <img src="/assets/otika-wordmark-dark.png" alt="OTIKA" className="h-auto w-40 object-contain sm:w-44" width="176" height="83" loading="lazy" />
         </a>
         <p className="mt-4 max-w-md leading-relaxed text-slate-400">Customize AI Agent untuk membantu bisnis melayani pelanggan, menyaring prospek, dan menjaga percakapan tetap berjalan melalui WhatsApp dan Instagram.</p>
         <div className="mt-5 flex gap-4">
