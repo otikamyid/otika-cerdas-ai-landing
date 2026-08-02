@@ -1,66 +1,50 @@
-import { Bot, Check, Instagram, MessageCircle, Sparkles } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
-
-const outcomes = [
-  "Balasan mengikuti knowledge bisnis",
-  "Bahasa natural, tidak kaku seperti bot",
-  "Kualifikasi prospek dan rekomendasi produk",
-  "Handover mulus ke admin manusia",
-];
-
-const ChannelFlow = () => {
-  const sectionRef = useRef<HTMLElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return;
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setIsVisible(true);
-        observer.disconnect();
-      }
-    }, { threshold: 0.2 });
-    observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-  <section ref={sectionRef} id="channels" className="section bg-slate-50/70 overflow-hidden">
+const ChannelFlow = () => (
+  <section id="channels" className="section overflow-hidden bg-white">
     <div className="container-tight">
-      <div className="mx-auto mb-14 max-w-3xl text-center">
+      <div className="mx-auto mb-12 max-w-3xl text-center">
         <span className="eyebrow">Channel aktif Otika</span>
-        <h2 className="mt-4">WhatsApp & Instagram, satu AI Agent yang paham bisnismu</h2>
-        <p className="mt-5 text-lg text-slate-600">Chat pelanggan masuk dari dua channel utama, lalu ditangani dengan alur yang sudah disesuaikan bersama tim Otika.</p>
+        <h2 className="mt-4">WhatsApp & Instagram masuk ke satu alur layanan</h2>
+        <p className="mt-5 text-lg text-slate-600">Dua channel utama, satu inbox yang lebih rapi, dan AI Agent yang siap membantu saat pelanggan datang.</p>
       </div>
 
-      <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_.95fr]">
-        <div className="flow-board" aria-label="Alur WhatsApp dan Instagram menuju AI Agent Otika">
-          <div className="space-y-4">
-            <div className={`channel-card flow-in ${isVisible ? "is-visible" : ""}`}><MessageCircle className="text-emerald-500" /> WhatsApp</div>
-            <div className={`channel-card flow-in flow-delay-2 ${isVisible ? "is-visible" : ""}`}><Instagram className="text-pink-500" /> Instagram</div>
-          </div>
-          <div className="flow-line" aria-hidden="true"><span /></div>
-          <div className="agent-core">
-            <Sparkles className="absolute right-3 top-3 h-4 w-4 text-amber-400" />
-            <Bot className="mx-auto mb-3 h-9 w-9 text-primary" />
-            <strong>AI Agent<br />Otika</strong>
-          </div>
-        </div>
+      <div className="channel-stage" role="img" aria-label="Animasi pesan WhatsApp dan Instagram mengalir ke inbox OTIKA">
+        <svg className="channel-visual-svg" viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="channel-shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="12" stdDeviation="12" floodColor="#0f172a" floodOpacity=".1" /></filter>
+            <linearGradient id="stage-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#f8fafc" /><stop offset="1" stopColor="#f1f5f9" /></linearGradient>
+            <linearGradient id="metric-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#fef08a" /><stop offset="1" stopColor="#fde047" /></linearGradient>
+            <path id="wa-flow-path" d="M260 238 C345 238 365 275 455 275" /><path id="ig-flow-path" d="M260 440 C345 440 365 394 455 394" />
+          </defs>
+          <rect x="8" y="8" width="984" height="604" rx="44" fill="url(#stage-bg)" stroke="#e2e8f0" />
 
-        <div className="space-y-4">
-          {outcomes.map((outcome, index) => (
-            <div className={`outcome-card ${isVisible ? "is-visible" : ""}`} style={{ animationDelay: `${index * 120 + 150}ms` }} key={outcome}>
-              <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-emerald-50"><Check className="h-4 w-4 text-emerald-600" /></span>
-              <span>{outcome}</span>
-            </div>
-          ))}
-        </div>
+          <g className="channel-node channel-node-wa" filter="url(#channel-shadow)">
+            <rect x="105" y="155" width="142" height="142" rx="34" fill="#22c55e" /><circle cx="176" cy="226" r="43" fill="white" />
+            <path d="M156 207c2-5 7-7 11-4l8 7c3 2 3 6 1 9l-4 5c8 14 17 22 31 29l5-5c3-3 7-3 10-1l7 8c3 4 1 10-3 12-8 4-18 3-28-2-20-10-37-27-47-47-4-9-3-18 1-26l8 15Z" fill="#22c55e" />
+            <text x="176" y="334" textAnchor="middle" className="channel-label">WHATSAPP</text>
+          </g>
+          <g className="channel-node channel-node-ig" filter="url(#channel-shadow)">
+            <rect x="105" y="357" width="142" height="142" rx="34" fill="#e62c6b" /><rect x="139" y="391" width="74" height="74" rx="20" fill="none" stroke="white" strokeWidth="8" /><circle cx="176" cy="428" r="18" fill="none" stroke="white" strokeWidth="8" /><circle cx="199" cy="404" r="5" fill="white" />
+            <text x="176" y="536" textAnchor="middle" className="channel-label">INSTAGRAM</text>
+          </g>
+
+          <use href="#wa-flow-path" className="channel-connector connector-wa" /><use href="#ig-flow-path" className="channel-connector connector-ig" />
+          <circle r="8" fill="#22c55e" className="motion-dot"><animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#wa-flow-path" /></animateMotion></circle>
+          <circle r="8" fill="#e62c6b" className="motion-dot"><animateMotion dur="3.1s" begin=".5s" repeatCount="indefinite"><mpath href="#ig-flow-path" /></animateMotion></circle>
+
+          <g className="inbox-window" filter="url(#channel-shadow)">
+            <rect x="450" y="126" width="430" height="388" rx="28" fill="white" stroke="#e2e8f0" strokeWidth="2" /><path d="M450 154a28 28 0 0 1 28-28h374a28 28 0 0 1 28 28v34H450v-34Z" fill="#f8fafc" />
+            <circle cx="480" cy="158" r="6" fill="#fdba74" /><circle cx="500" cy="158" r="6" fill="#fde68a" /><circle cx="520" cy="158" r="6" fill="#bbf7d0" /><circle cx="562" cy="158" r="6" fill="#86efac" /><text x="582" y="164" className="browser-title">inbox.otika.biz.id</text><path d="M450 188h430" stroke="#e2e8f0" strokeWidth="2" />
+            <g className="inbox-row inbox-row-one"><rect x="472" y="212" width="386" height="82" rx="18" fill="#f0fdf4" /><circle cx="514" cy="253" r="24" fill="#d9f99d" /><text x="514" y="261" textAnchor="middle" className="avatar-letter">B</text><text x="552" y="246" className="person-name">Budi Santoso</text><text x="552" y="272" className="message-preview">Halo kak, produknya masih ready?</text><circle cx="824" cy="238" r="5" fill="#22c55e" /><circle cx="824" cy="270" r="15" fill="#4ade80" /><text x="824" y="276" textAnchor="middle" className="unread-count">3</text></g>
+            <g className="inbox-row inbox-row-two"><circle cx="514" cy="342" r="24" fill="#ddd6fe" /><text x="514" y="350" textAnchor="middle" className="avatar-letter">S</text><text x="552" y="335" className="person-name">Sari · Toko Ayu</text><text x="552" y="361" className="message-preview">Berapa ongkir ke Bandung?</text><circle cx="824" cy="318" r="5" fill="#e62c6b" /><circle cx="824" cy="350" r="15" fill="#ec4899" /><text x="824" y="356" textAnchor="middle" className="unread-count">1</text><path d="M472 303h386" stroke="#e2e8f0" /></g>
+            <g className="inbox-row inbox-row-three"><circle cx="514" cy="430" r="24" fill="#fef3c7" /><text x="514" y="438" textAnchor="middle" className="avatar-letter">A</text><text x="552" y="423" className="person-name">Andi Pratama</text><text x="552" y="449" className="message-preview">Oke deal, saya lanjut ya</text><circle cx="824" cy="406" r="5" fill="#22c55e" /><path d="M472 391h386" stroke="#e2e8f0" /></g>
+          </g>
+          <g className="metric-badge" filter="url(#channel-shadow)"><rect x="744" y="75" width="206" height="96" rx="24" fill="url(#metric-bg)" stroke="#0f172a" strokeWidth="3" /><text x="847" y="126" textAnchor="middle" className="metric-number">24/7</text><text x="847" y="151" textAnchor="middle" className="metric-caption">AI AGENT AKTIF</text></g>
+        </svg>
       </div>
-      <p className="mt-8 text-center text-sm text-slate-500">Integrasi Messenger dan channel lainnya sedang dalam pengembangan.</p>
+      <div className="mt-8 grid gap-4 text-center sm:grid-cols-3"><div><strong className="text-slate-900">Satu inbox</strong><p className="mt-1 text-sm text-slate-500">Chat lebih mudah dipantau</p></div><div><strong className="text-slate-900">Dua channel aktif</strong><p className="mt-1 text-sm text-slate-500">WhatsApp dan Instagram</p></div><div><strong className="text-slate-900">AI + manusia</strong><p className="mt-1 text-sm text-slate-500">Handover saat dibutuhkan</p></div></div>
+      <p className="mt-7 text-center text-sm text-slate-500">Integrasi Messenger dan channel lainnya sedang dalam pengembangan.</p>
     </div>
   </section>
-  );
-};
+);
 
 export default ChannelFlow;
