@@ -1,4 +1,5 @@
 import ChannelFlow from "@/components/ChannelFlow";
+import CrmFeatures from "@/components/CrmFeatures";
 import Clients from "@/components/Clients";
 import ConsultationCta from "@/components/ConsultationCta";
 import Cta from "@/components/Cta";
@@ -20,6 +21,7 @@ const Index = () => <div className="min-h-screen bg-white">
     <Clients />
     <Features />
     <ChannelFlow />
+    <CrmFeatures />
     <Services />
     <Pricing />
     <ConsultationCta />
