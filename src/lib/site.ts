@@ -13,3 +13,8 @@ export const consultationUrl = (source = "website") => {
   const message = `Halo OTIKA, saya ingin konsultasi Customize AI Agent untuk bisnis saya. Saya datang dari ${source}.`;
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`;
 };
+
+export const independencePromoUrl = () => {
+  const message = "Halo Tika, saya mau ambil PROMO spesial HUT RI 81TH";
+  return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`;
+};

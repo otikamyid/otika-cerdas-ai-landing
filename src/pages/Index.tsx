@@ -7,6 +7,7 @@ import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import IndependencePromo from "@/components/IndependencePromo";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
 import Seo from "@/components/Seo";
@@ -15,6 +16,7 @@ import Testimonials from "@/components/Testimonials";
 
 const Index = () => <div className="min-h-screen bg-white">
   <Seo title="Customize AI Agent WhatsApp & Instagram | OTIKA" description="AI Agent yang disesuaikan dengan produk, SOP, gaya komunikasi, dan alur bisnis Anda. Konsultasi integrasi WhatsApp dan Instagram bersama Otika." />
+  <IndependencePromo />
   <Navbar />
   <main>
     <Hero />
