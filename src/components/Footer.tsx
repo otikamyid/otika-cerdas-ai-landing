@@ -16,7 +16,7 @@ const Footer = () => <footer className="bg-slate-950 text-white">
         </div>
       </div>
       <div><h2 className="text-base font-semibold">Fitur</h2><ul className="mt-4 space-y-3 text-sm text-slate-400"><li><a href="/fitur/whatsapp-api">WhatsApp API</a></li><li><a href="/fitur/whatsapp-coexistence">WhatsApp Coexistence</a></li><li><a href="/fitur/ai-agent">AI Agent</a></li><li><a href="/fitur/follow-up-ai">Follow Up by AI</a></li><li><a href="/fitur/broadcast-whatsapp">Broadcast</a></li></ul></div>
-      <div><h2 className="text-base font-semibold">Jelajahi</h2><ul className="mt-4 space-y-3 text-sm text-slate-400"><li><a href="/#features">Keunggulan</a></li><li><a href="/#channels">Channel</a></li><li><a href="/#pricing">Harga</a></li><li><a href="/#testimonials">Klien & Testimoni</a></li></ul></div>
+      <div><h2 className="text-base font-semibold">Jelajahi</h2><ul className="mt-4 space-y-3 text-sm text-slate-400"><li><a href="/#features">Keunggulan</a></li><li><a href="/#channels">Channel</a></li><li><a href="/#pricing">Harga</a></li><li><a href="/#testimonials">Klien & Testimoni</a></li><li><a href="https://otika.biz.id/blog/">Blog</a></li></ul></div>
       <div><h2 className="text-base font-semibold">Perusahaan</h2><ul className="mt-4 space-y-3 text-sm text-slate-400"><li><a href="/kebijakan-privasi">Kebijakan Privasi</a></li><li><a href="/syarat-ketentuan">Syarat & Ketentuan</a></li><li><a href="/kebijakan-penggunaan">Kebijakan Penggunaan</a></li><li><a href={`mailto:${site.email}`}>{site.email}</a></li></ul></div>
     </div>
     <div className="mt-12 border-t border-slate-800 pt-7 text-sm text-slate-500">© {new Date().getFullYear()} {site.legalName}. Seluruh hak cipta dilindungi.</div>

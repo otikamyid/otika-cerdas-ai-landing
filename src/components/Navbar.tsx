@@ -2,7 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const links = [
-  ["Cara Kerja", "/#cara-kerja"], ["Fitur", "/#features"], ["Klien", "/#testimonials"], ["Harga", "/#pricing"], ["FAQ", "/#faq"],
+  ["Cara Kerja", "/#cara-kerja"], ["Fitur", "/#features"], ["Klien", "/#testimonials"], ["Harga", "/#pricing"], ["FAQ", "/#faq"], ["Blog", "https://otika.biz.id/blog/"],
 ];
 
 const Navbar = ({ compact = false }: { compact?: boolean }) => {
