@@ -1,5 +1,5 @@
 import { consultationUrl } from "@/lib/site";
-import { ArrowRight, CheckCircle2, MessageCircle } from "lucide-react";
+import { ArrowRight, Calculator, CheckCircle2, MessageCircle } from "lucide-react";
 
 const Hero = () => (
   <section className="hero-section">
@@ -18,6 +18,9 @@ const Hero = () => (
           <a className="btn-primary gap-2" href={consultationUrl("hero")} target="_blank" rel="noreferrer"><MessageCircle className="h-5 w-5" /> Konsultasikan Bisnis Saya</a>
           <a className="btn-secondary gap-2" href="#cara-kerja">Lihat Cara Kerja <ArrowRight className="h-4 w-4" /></a>
         </div>
+        <a href="/kalkulator-biaya-whatsapp" className="mt-4 inline-flex items-center gap-2 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm font-bold text-amber-900 transition hover:-translate-y-0.5 hover:bg-amber-100">
+          <Calculator className="h-5 w-5 text-amber-600" /> Cek perkiraan biaya WhatsApp API mulai 1 Oktober 2026 <ArrowRight className="h-4 w-4" />
+        </a>
         <div className="mt-8 flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-600">
           {["Konsultasi gratis", "Dibantu setup", "Handover ke admin"].map(item => <span className="flex items-center gap-2" key={item}><CheckCircle2 className="h-4 w-4 text-emerald-500" />{item}</span>)}
         </div>

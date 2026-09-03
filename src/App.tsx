@@ -3,6 +3,7 @@ import LegalPage from "./pages/LegalPage";
 import NotFound from "./pages/NotFound";
 import type { ReactElement } from "react";
 import FeaturePage from "./pages/FeaturePage";
+import WhatsAppCostCalculator from "./pages/WhatsAppCostCalculator";
 
 const routes: Record<string, ReactElement> = {
   "/": <Index />,
@@ -14,6 +15,7 @@ const routes: Record<string, ReactElement> = {
   "/fitur/ai-agent": <FeaturePage featureKey="ai-agent" />,
   "/fitur/follow-up-ai": <FeaturePage featureKey="follow-up-ai" />,
   "/fitur/broadcast-whatsapp": <FeaturePage featureKey="broadcast-whatsapp" />,
+  "/kalkulator-biaya-whatsapp": <WhatsAppCostCalculator />,
 };
 
 const normalizePath = (path: string) => path.length > 1 ? path.replace(/\/$/, "") : path;
