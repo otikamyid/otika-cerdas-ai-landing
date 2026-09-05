@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Seo from "@/components/Seo";
 import { consultationUrl } from "@/lib/site";
-import { ArrowRight, Calculator, Info, MessageCircle, ShieldCheck } from "lucide-react";
+import { ArrowRight, BarChart3, Bot, Calculator, Gauge, Info, MessageCircle, ShieldCheck, WalletCards } from "lucide-react";
 import { useState } from "react";
 
 const rates = {
@@ -146,6 +146,55 @@ const WhatsAppCostCalculator = () => {
                 </a>
               </aside>
             </div>
+          </div>
+        </section>
+
+        <section className="section bg-white">
+          <div className="container-tight">
+            <div className="mx-auto max-w-3xl text-center">
+              <span className="eyebrow"><BarChart3 className="h-4 w-4" /> WhatsApp Insights OTIKA</span>
+              <h2 className="mt-5 text-3xl font-bold md:text-4xl">Bukan cuma menghitung. <span className="gradient-text">Pantau dan kendalikan pemakaian.</span></h2>
+              <p className="mt-5 text-lg leading-relaxed text-slate-600">Dashboard OTIKA membantu tim melihat pemakaian WhatsApp Cloud API dan mengatur batas respons AI sebelum biaya berjalan terlalu jauh.</p>
+            </div>
+
+            <div className="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-xl">
+              <div className="border-b border-slate-200 bg-white px-5 py-4 sm:px-7">
+                <p className="font-bold text-slate-950">Kontrol Biaya WhatsApp Cloud API</p>
+                <p className="mt-1 text-sm text-slate-500">Pantau outbound delivered dan atur batas penggunaan AI tenant.</p>
+              </div>
+              <div className="grid gap-4 p-5 sm:grid-cols-2 sm:p-7 lg:grid-cols-4">
+                {[
+                  { title: "Outbound delivered", text: "Pantau jumlah pesan keluar", icon: WalletCards },
+                  { title: "Estimasi biaya saat ini", text: "Lihat penggunaan periode berjalan", icon: Calculator },
+                  { title: "Proyeksi aturan baru", text: "Simulasikan biaya mulai 1 Oktober", icon: BarChart3 },
+                  { title: "Potensi penghematan", text: "Temukan ruang efisiensi respons", icon: Gauge },
+                ].map(({ title, text, icon: Icon }) => (
+                  <article key={title} className="rounded-2xl border border-slate-200 bg-white p-5">
+                    <Icon className="h-6 w-6 text-primary" aria-hidden="true" />
+                    <h3 className="mt-4 font-bold text-slate-950">{title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-500">{text}</p>
+                  </article>
+                ))}
+              </div>
+              <div className="grid gap-5 border-t border-slate-200 p-5 sm:p-7 lg:grid-cols-2">
+                <article className="rounded-2xl border border-emerald-200 bg-emerald-50 p-6">
+                  <div className="flex items-center gap-3"><ShieldCheck className="h-6 w-6 text-emerald-600" /><h3 className="font-bold text-slate-950">Kuota gratis per nomor</h3></div>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-600">Pantau pemakaian dan sisa kuota 1.000 service message gratis bulanan pada setiap nomor WhatsApp Cloud API.</p>
+                  <div className="mt-5 h-2 overflow-hidden rounded-full bg-emerald-100"><div className="h-full w-2/3 rounded-full bg-emerald-500" /></div>
+                  <p className="mt-2 text-xs font-semibold text-emerald-700">Ringkasan gratis, berbayar, dan estimasi tersedia per nomor</p>
+                </article>
+                <article className="rounded-2xl border border-sky-200 bg-sky-50 p-6">
+                  <div className="flex items-center gap-3"><Bot className="h-6 w-6 text-primary" /><h3 className="font-bold text-slate-950">Batas respons AI</h3></div>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-600">Atur batas auto-reply per pelanggan dalam 24 jam, per tenant per hari, dan per tenant per bulan.</p>
+                  <div className="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-primary">
+                    <span className="rounded-full bg-white px-3 py-2">Mode lunak: catat pelampauan</span>
+                    <span className="rounded-full bg-white px-3 py-2">Mode keras: hentikan respons berikutnya</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <p className="mx-auto mt-6 max-w-3xl text-center text-sm leading-relaxed text-slate-500">Insight dapat ditinjau berdasarkan sumber, kategori, dan tren harian. Fitur kontrol membantu mengelola pemakaian, sedangkan tagihan final tetap mengacu pada billing resmi Meta.</p>
           </div>
         </section>
 
