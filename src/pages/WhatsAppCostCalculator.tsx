@@ -112,6 +112,9 @@ const WhatsAppCostCalculator = () => {
                       </button>
                     ))}
                   </div>
+                  <div className="mt-4 rounded-xl border border-amber-400/30 bg-amber-400/10 p-4 text-sm leading-relaxed text-amber-100">
+                    <strong className="text-amber-300">Khusus Paket CUSTOM:</strong> biaya layanan dan implementasi OTIKA mengikuti kebutuhan serta kesepakatan proyek. Biaya penggunaan WhatsApp Cloud API tidak termasuk biaya paket dan menjadi tanggung jawab masing-masing klien.
+                  </div>
                 </div>
 
                 <div>
@@ -161,6 +164,7 @@ const WhatsAppCostCalculator = () => {
               <Info className="h-8 w-8 text-amber-600" />
               <h2 className="mt-4 text-2xl font-bold text-slate-900">Penting sebelum membuat anggaran</h2>
               <p className="mt-4 leading-relaxed text-slate-700">Kalkulator ini adalah simulasi, belum termasuk PPN, biaya model AI, API tambahan, diskon volume, atau kebutuhan implementasi khusus. Tagihan aktual mengikuti kategori pesan, tujuan negara penerima, serta rate card Meta yang berlaku.</p>
+              <p className="mt-4 rounded-xl border border-amber-200 bg-white/70 p-4 text-sm leading-relaxed text-slate-700"><strong className="text-slate-900">Disclaimer Paket CUSTOM:</strong> seluruh biaya pemakaian WhatsApp Cloud API dibayarkan dan menjadi tanggung jawab masing-masing klien sesuai tagihan Meta atau metode pembayaran yang terhubung pada akun WhatsApp Business milik klien.</p>
               <a href="https://developers.facebook.com/docs/whatsapp/pricing/" target="_blank" rel="noreferrer" className="mt-5 inline-flex font-semibold text-primary hover:underline">Lihat informasi harga resmi Meta <ArrowRight className="ml-2 h-4 w-4" /></a>
             </article>
           </div>
