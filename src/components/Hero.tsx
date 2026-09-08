@@ -16,8 +16,8 @@ const Hero = () => {
     <div className="v3-shell v3-hero-layout">
       <div className="v3-hero-copy">
         <span className="v3-kicker"><span className="v3-status-dot" /> CUSTOMIZE AI AGENT UNTUK BISNISMU</span>
-        <h1>Chat masuk.<br />Bisnis jalan.<br /><span className="v3-blue-text">Anda bisa napas.</span></h1>
-        <p className="v3-hero-sub">Bukan chatbot template. <strong>Ini AI Agent punya bisnismu.</strong> Otika mempelajari produk, SOP, gaya bicara, sampai alur closing bisnis Anda.</p>
+        <h1>Layanan lebih sigap.<br />Closing lebih dekat.<br /><span className="v3-blue-text">Bersama AI Agent.</span></h1>
+        <p className="v3-hero-sub">Bukan chatbot template. <strong>Ini AI Agent punya bisnismu.</strong> Otika mempelajari produk, SOP, gaya bicara, sampai alur closing—karena pelanggan suka respons cepat, dan admin juga ingin pulang tepat waktu.</p>
         <p className="v3-price-note"><mark>Mulai Rp5.000-an per hari.</mark><br /><span>Setara es teh. Bedanya, yang ini bantu balas pelanggan.</span></p>
         <div className="v3-actions">
           <a href={consultationUrl("hero V3")} target="_blank" rel="noreferrer" className="btn-primary gap-3">Rakit AI untuk Bisnis Saya <ArrowUpRight size={18} /></a>
