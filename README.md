@@ -56,6 +56,23 @@ Output Directory : dist
 Install Command  : npm ci
 ```
 
+## Deploy ke Netlify
+
+Repository menyediakan `netlify.toml` dengan build Vite, cache aset, dan
+fallback SPA agar URL halaman langsung tidak menghasilkan 404.
+
+Hubungkan repository ke Netlify lalu pilih branch yang ingin dideploy.
+Konfigurasi build akan terbaca otomatis:
+
+```text
+Build Command     : npm run build
+Publish Directory : dist
+Node.js           : 20
+```
+
+Meta tag verifikasi Search Console sengaja tidak disertakan pada branch V3.
+Tambahkan token verifikasi baru setelah domain produksi V3 ditentukan.
+
 ## Deploy ke Docker atau Easypanel
 
 `Dockerfile` menggunakan multi-stage build Node.js dan Nginx. Nginx sudah dikonfigurasi untuk melayani aset statis, route halaman legal, dan endpoint health check `/health`.
