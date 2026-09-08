@@ -1,118 +1,19 @@
+import { ArrowUpRight, BrainCircuit, Clock3, Handshake, MessageCircle, SlidersHorizontal } from "lucide-react";
 
-import {
-  Clock,
-  MessagesSquare,
-  TrendingUp,
-  Puzzle,
-  ShieldCheck,
-} from "lucide-react";
+const benefits = [
+  { icon: BrainCircuit, title: "Ngerti produk. Bukan cuma ‘baik, Kak’.", text: "Knowledge bisnis dan SOP jadi bekal menjawab. Respons lebih relevan, gaya bicara tetap punya Anda." },
+  { icon: Clock3, title: "Jam tutup toko ≠ jam tutup chat.", text: "Bantu jawab pertanyaan pelanggan 24/7, bahkan saat tim Anda sudah waktunya istirahat." },
+  { icon: Handshake, title: "AI sigap. Admin tetap siap.", text: "Percakapan yang perlu sentuhan manusia bisa dialihkan ke tim. Kontrol tetap ada di tangan Anda." },
+  { icon: SlidersHorizontal, title: "Bisnis beda, racikannya beda.", text: "Dari FAQ, katalog, sampai alur follow-up. Kami sesuaikan dengan pekerjaan yang benar-benar ingin diringankan." },
+];
 
-const Features = () => {
-  return (
-    <section id="features" className="section bg-white scroll-mt-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold mb-4">
-            Balas Ratusan Chat Sampai Closing Full Autopilot!
-          </h2>
-          <p className="text-lg text-gray-600 mt-4">
-            Otika mengintegrasikan AI Agent yang disesuaikan dengan bisnis Anda melalui WhatsApp dan Instagram, lalu membantu admin menangani percakapan seperti rekan kerja digital.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Feature 1 */}
-          <div className="feature-card">
-            <div className="rounded-full bg-primary-100 w-16 h-16 flex items-center justify-center mb-5">
-              <Clock className="h-8 w-8 text-primary" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3">Respon Cepat 24/7</h3>
-            <p className="text-gray-600">
-              AI Chatbot yang merespon pelanggan Anda secara instan kapanpun, bahkan di luar jam kerja.
-            </p>
-          </div>
-
-          {/* Feature 2 */}
-          <div className="feature-card">
-            <div className="rounded-full bg-primary-100 w-16 h-16 flex items-center justify-center mb-5">
-              <MessagesSquare className="h-8 w-8 text-primary" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3">Bahasa Natural</h3>
-            <p className="text-gray-600">
-              Teknologi AI canggih yang berkomunikasi dengan bahasa natural, tidak kaku seperti chatbot biasa.
-            </p>
-          </div>
-
-          {/* Feature 3 */}
-          <div className="feature-card">
-            <div className="rounded-full bg-primary-100 w-16 h-16 flex items-center justify-center mb-5">
-              <TrendingUp className="h-8 w-8 text-primary" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3">Konversi Tinggi</h3>
-            <p className="text-gray-600">
-              Dirancang untuk membantu proses penjualan dari pemberian informasi hingga closing transaksi.
-            </p>
-          </div>
-
-          {/* Feature 4 */}
-          <div className="feature-card">
-            <div className="rounded-full bg-primary-100 w-16 h-16 flex items-center justify-center mb-5">
-              <Puzzle className="h-8 w-8 text-primary" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3">Integrasi Mudah</h3>
-            <p className="text-gray-600">
-              Terhubung ke WhatsApp dan Instagram dengan proses setup yang dibantu oleh tim Otika.
-            </p>
-          </div>
-
-          {/* Feature 5 */}
-          <div className="feature-card">
-            <div className="rounded-full bg-primary-100 w-16 h-16 flex items-center justify-center mb-5">
-              <ShieldCheck className="h-8 w-8 text-primary" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3">Aman & Handal</h3>
-            <p className="text-gray-600">
-              Keamanan data terjamin dengan infrastruktur yang stabil dan handal untuk keperluan bisnis.
-            </p>
-          </div>
-
-          {/* Feature 6 — koin Rupiah kustom (lucide tidak punya simbol Rp) */}
-          <div className="feature-card">
-            <div className="rounded-full bg-primary-100 w-16 h-16 flex items-center justify-center mb-5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 text-primary"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={1.8}
-                aria-hidden="true"
-              >
-                <circle cx="12" cy="12" r="9" />
-                <text
-                  x="12"
-                  y="12"
-                  textAnchor="middle"
-                  dominantBaseline="central"
-                  fontSize="8"
-                  fontWeight="700"
-                  fill="currentColor"
-                  stroke="none"
-                  fontFamily="Poppins, sans-serif"
-                >
-                  Rp
-                </text>
-              </svg>
-            </div>
-            <h3 className="text-xl font-semibold mb-3">Hemat Biaya</h3>
-            <p className="text-gray-600">
-              Biaya jauh lebih murah dibandingkan mempekerjakan CS manusia - mulai dari Rp 5000-an/hari.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
+const Features = () => <section id="features" className="section v3-benefits">
+  <div className="v3-shell">
+    <div className="v3-section-intro" data-reveal><div><span className="v3-kicker">01 / REKAN KERJA DIGITAL</span><h2>Balas ratusan chat.<br /><span className="v3-muted-text">Bukan ratusan keluhan admin.</span></h2></div><p>Balas Ratusan Chat Sampai Closing Full Autopilot! OTIKA membantu percakapan bergerak dari “kak, mau tanya” ke langkah berikutnya.</p></div>
+    <div className="v3-bento">
+      <article className="v3-bento-lead" data-reveal><span className="v3-small-label">CUSTOMIZE AI AGENT</span><div className="v3-bento-symbol" aria-hidden="true"><MessageCircle size={82} strokeWidth={1} /><span>ai</span></div><h3>CS tanpa drama.<br />Bisnis tetap punya rasa.</h3><p>Teknologi AI yang disiapkan untuk cara bisnis Anda bekerja. Bukan memaksa bisnis mengikuti template.</p><a href="/fitur/ai-agent">Kenali AI Agent OTIKA <ArrowUpRight size={19} /></a></article>
+      {benefits.map(({ icon: Icon, title, text }, index) => <article className="v3-benefit-card" key={title} data-reveal><div><Icon size={26} strokeWidth={1.5} /><span>0{index + 1}</span></div><h3>{title}</h3><p>{text}</p></article>)}
+    </div>
+  </div>
+</section>;
 export default Features;

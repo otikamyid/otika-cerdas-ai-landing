@@ -1,8 +1,9 @@
 import { site, consultationUrl } from "@/lib/site";
 import { Instagram, Mail, MessageCircle } from "lucide-react";
 
-const Footer = () => <footer className="bg-slate-950 text-white">
+const Footer = () => <footer className="v3-footer text-white">
   <div className="container mx-auto px-4 py-14 sm:px-6 lg:px-8">
+    <p className="v3-footer-signoff">Bisnis Anda jalan.<br /><span>OTIKA bantu percakapannya.</span></p>
     <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
       <div className="md:col-span-2">
         <a href="/" className="inline-flex items-center" aria-label="OTIKA beranda">

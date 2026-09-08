@@ -1,31 +1,18 @@
-import { BookOpen, Bot, MessagesSquare, RefreshCw, UserRoundCheck, WandSparkles } from "lucide-react";
+import { BookOpen, MessagesSquare, RefreshCw, WandSparkles, ArrowUpRight } from "lucide-react";
+import { consultationUrl } from "@/lib/site";
 
 const steps = [
-  { icon: MessagesSquare, title: "Cerita dulu soal bisnismu", text: "Tim Otika memetakan produk, pertanyaan pelanggan, SOP, dan bagian yang paling menyita waktu admin." },
-  { icon: BookOpen, title: "Susun knowledge & alur", text: "Katalog, FAQ, gaya bicara, kualifikasi prospek, serta kapan AI harus menyerahkan chat ke manusia disiapkan bersama." },
-  { icon: WandSparkles, title: "Kami customize AI Agent", text: "AI dikonfigurasi dan diuji untuk WhatsApp atau Instagram—bukan dilepas dengan jawaban template seadanya." },
-  { icon: RefreshCw, title: "Evaluasi dan bertumbuh", text: "Jawaban dapat disempurnakan mengikuti produk, promo, dan kebutuhan operasional bisnis yang berubah." },
+  { icon: MessagesSquare, title: "Ngobrol dulu. Bukan langsung invoice.", text: "Ceritakan produk, SOP, pertanyaan pelanggan, dan bagian yang paling menyita waktu admin." },
+  { icon: BookOpen, title: "Bisnismu jadi buku pelajarannya.", text: "Katalog, FAQ, gaya bicara, dan alur kualifikasi prospek disusun. Termasuk kapan harus memanggil manusia." },
+  { icon: WandSparkles, title: "Diracik, diuji, baru diajak kerja.", text: "Kami customize AI Agent untuk WhatsApp atau Instagram, lalu menguji skenario percakapan bisnis Anda." },
+  { icon: RefreshCw, title: "Bisnis berkembang. AI ikut belajar.", text: "Knowledge dan jawaban disempurnakan mengikuti perubahan produk, promo, dan kebutuhan operasional." },
 ];
 
-const Services = () => <section id="cara-kerja" className="section bg-white">
-  <div className="container-tight">
-    <div className="mx-auto max-w-3xl text-center">
-      <span className="eyebrow">Cara kerja Otika</span>
-      <h2 className="mt-4">AI-nya belajar bisnis Anda, bukan Anda yang dipaksa mengikuti template</h2>
-      <p className="mt-5 text-lg text-slate-600">Kami bantu dari pemetaan kebutuhan sampai AI Agent siap berbicara dengan pelanggan.</p>
-    </div>
-    <div className="mt-14 grid gap-5 md:grid-cols-2">
-      {steps.map((step, index) => <article className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm" key={step.title}>
-        <div className="flex items-start gap-5"><span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-sky-50 text-primary"><step.icon /></span><div><span className="text-xs font-bold uppercase tracking-widest text-primary">Langkah {index + 1}</span><h3 className="mt-2 text-xl font-bold">{step.title}</h3><p className="mt-3 leading-relaxed text-slate-600">{step.text}</p></div></div>
-      </article>)}
-    </div>
-    <div className="mt-14 grid gap-5 rounded-3xl bg-slate-950 p-8 text-white md:grid-cols-3 md:p-10">
-      <div className="md:col-span-1"><Bot className="h-10 w-10 text-sky-400" /><h3 className="mt-5 text-2xl font-bold">AI membantu. Manusia tetap memegang kendali.</h3></div>
-      <div className="grid gap-4 md:col-span-2 sm:grid-cols-2">
-        {["Jawab FAQ & detail produk", "Kualifikasi kebutuhan prospek", "Kirim informasi yang relevan", "Handover ke admin saat dibutuhkan"].map(item => <div className="flex gap-3 rounded-xl bg-white/5 p-4" key={item}><UserRoundCheck className="h-5 w-5 shrink-0 text-emerald-400" /><span>{item}</span></div>)}
-      </div>
-    </div>
+const Services = () => <section id="cara-kerja" className="section v3-process">
+  <div className="v3-shell">
+    <div className="v3-section-intro" data-reveal><div><span className="v3-kicker">04 / DARI KENALAN SAMPAI JALAN</span><h2>AI-nya belajar bisnis Anda.<br /><span className="v3-muted-text">Anda tak perlu kuliah AI dulu.</span></h2></div><p>Kami bantu dari pemetaan kebutuhan sampai AI Agent siap berbicara dengan pelanggan.</p></div>
+    <div className="v3-steps">{steps.map((step, index) => <article key={step.title} data-reveal><div className="v3-step-number">0{index + 1}<step.icon size={24} strokeWidth={1.5} /></div><h3>{step.title}</h3><p>{step.text}</p></article>)}</div>
+    <div className="v3-process-note"><span>AI membantu. <strong>Manusia tetap memegang kendali.</strong></span><a href={consultationUrl("cara kerja V3")} target="_blank" rel="noreferrer">Mulai dari ngobrol <ArrowUpRight size={18} /></a></div>
   </div>
 </section>;
-
 export default Services;

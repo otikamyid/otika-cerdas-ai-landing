@@ -4,6 +4,19 @@ Website resmi PT Otika Solusi Nusantara untuk memperkenalkan layanan Customize A
 
 ## Teknologi
 
+V3 dikerjakan di branch `redesign/otika-landing-v3`. Halaman statis tetap
+dapat dideploy ke Vercel maupun container Nginx/Easypanel.
+
+Desain V3 mempertahankan logo OTIKA, warna biru/cyan, klien, testimoni,
+harga paket, serta seluruh URL halaman yang sudah ada. Hero menyediakan
+contoh percakapan interaktif untuk otomotif, material, dan travel; contoh
+tersebut merupakan ilustrasi, bukan koneksi langsung ke layanan AI.
+
+Efek visual memakai CSS dan IntersectionObserver tanpa dependensi animasi.
+Preferensi `prefers-reduced-motion` dihormati. Halaman legal, fitur, dan
+kalkulator dimuat terpisah agar tidak membebani unduhan awal beranda.
+Style V3 ada di `src/v3.css`.
+
 - React 18
 - TypeScript
 - Vite
@@ -60,6 +73,14 @@ Pada Easypanel, gunakan deployment dari repository dan arahkan domain ke port co
 - `/kebijakan-privasi`
 - `/syarat-ketentuan`
 - `/kebijakan-penggunaan`
+- `/fitur/whatsapp-api`
+- `/fitur/whatsapp-coexistence`
+- `/fitur/ai-agent`
+- `/fitur/follow-up-ai`
+- `/fitur/broadcast-whatsapp`
+- `/kalkulator-biaya-whatsapp`
+
+Menu Blog tetap mengarah ke https://otika.biz.id/blog/.
 
 ## Kontak
 

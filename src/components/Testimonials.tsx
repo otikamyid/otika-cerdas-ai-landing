@@ -18,7 +18,7 @@ const Testimonials = () => {
   return <section id="testimonials" className="section bg-slate-50">
     <div className="container-tight">
       <div className="mx-auto max-w-3xl text-center"><span className="eyebrow">Cerita klien Otika</span><h2 className="mt-4">Bukan sekadar demo. Sudah dipakai bisnis sungguhan.</h2><p className="mt-5 text-lg text-slate-600">Cuplikan percakapan dan pengalaman pengguna dari beragam sektor.</p></div>
-      <div className="mt-14 grid items-center gap-10 lg:grid-cols-2">
+      <div className="mt-14 grid items-center gap-10 lg:grid-cols-2" data-reveal>
         <div className="rounded-3xl bg-[#e8e1d9] p-4 shadow-xl"><img src={item.image} alt={`Cuplikan testimoni ${item.client}`} className="mx-auto max-h-[560px] w-full rounded-2xl bg-white object-contain" loading="lazy" /></div>
         <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
           <Quote className="h-10 w-10 text-primary/30" /><p className="mt-6 text-xl leading-relaxed text-slate-700">“{item.description}”</p><h3 className="mt-7 text-xl font-bold">{item.client}</h3>

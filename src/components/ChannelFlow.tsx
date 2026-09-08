@@ -2,8 +2,8 @@ const ChannelFlow = () => (
   <section id="channels" className="section overflow-hidden bg-white">
     <div className="container-tight">
       <div className="mx-auto mb-12 max-w-3xl text-center">
-        <span className="eyebrow">Channel aktif Otika</span>
-        <h2 className="mt-4">WhatsApp & Instagram masuk ke satu alur layanan</h2>
+        <span className="eyebrow">02 / Channel aktif Otika</span>
+        <h2 className="mt-4">Dua pintu masuk.<br />Satu meja layanan.</h2>
         <p className="mt-5 text-lg text-slate-600">Dua channel utama, satu inbox yang lebih rapi, dan AI Agent yang siap membantu saat pelanggan datang.</p>
       </div>
 
@@ -34,7 +34,7 @@ const ChannelFlow = () => (
           <g className="inbox-window" filter="url(#channel-shadow)">
             <rect x="450" y="126" width="430" height="388" rx="28" fill="white" stroke="#e2e8f0" strokeWidth="2" /><path d="M450 154a28 28 0 0 1 28-28h374a28 28 0 0 1 28 28v34H450v-34Z" fill="#f8fafc" />
             <circle cx="480" cy="158" r="6" fill="#fdba74" /><circle cx="500" cy="158" r="6" fill="#fde68a" /><circle cx="520" cy="158" r="6" fill="#bbf7d0" /><circle cx="562" cy="158" r="6" fill="#86efac" /><text x="582" y="164" className="browser-title">app.otika.biz.id</text><path d="M450 188h430" stroke="#e2e8f0" strokeWidth="2" />
-            <g className="inbox-row inbox-row-one"><rect x="472" y="212" width="386" height="82" rx="18" fill="#f0fdf4" /><circle cx="514" cy="253" r="24" fill="#d9f99d" /><text x="514" y="261" textAnchor="middle" className="avatar-letter">M</text><text x="552" y="246" className="person-name">Marshell</text><text x="552" y="272" className="message-preview">Halo kak, bisa booking service motor?</text><circle cx="824" cy="238" r="5" fill="#22c55e" /><circle cx="824" cy="270" r="15" fill="#4ade80" /><text x="824" y="276" textAnchor="middle" className="unread-count">3</text></g>
+            <g className="inbox-row inbox-row-one"><rect x="472" y="212" width="386" height="82" rx="18" fill="#f0fdf4" /><circle cx="514" cy="253" r="24" fill="#d9f99d" /><text x="514" y="261" textAnchor="middle" className="avatar-letter">M</text><text x="552" y="246" className="person-name">Marshell</text><text x="552" y="265" className="message-preview"><tspan x="552">Halo kak, bisa booking</tspan><tspan x="552" dy="19">service motor?</tspan></text><circle cx="824" cy="238" r="5" fill="#22c55e" /><circle cx="824" cy="270" r="15" fill="#4ade80" /><text x="824" y="276" textAnchor="middle" className="unread-count">3</text></g>
             <g className="inbox-row inbox-row-two"><circle cx="514" cy="342" r="24" fill="#ddd6fe" /><text x="514" y="350" textAnchor="middle" className="avatar-letter">M</text><text x="552" y="335" className="person-name">Mega</text><text x="552" y="361" className="message-preview">U Ditch ukuran 50x50 ready?</text><circle cx="824" cy="318" r="5" fill="#e62c6b" /><circle cx="824" cy="350" r="15" fill="#ec4899" /><text x="824" y="356" textAnchor="middle" className="unread-count">1</text><path d="M472 303h386" stroke="#e2e8f0" /></g>
             <g className="inbox-row inbox-row-three"><circle cx="514" cy="430" r="24" fill="#fef3c7" /><text x="514" y="438" textAnchor="middle" className="avatar-letter">N</text><text x="552" y="423" className="person-name">Nura</text><text x="552" y="449" className="message-preview">jadi deal paket Mumtazz.</text><circle cx="824" cy="406" r="5" fill="#22c55e" /><path d="M472 391h386" stroke="#e2e8f0" /></g>
           </g>
