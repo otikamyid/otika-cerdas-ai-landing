@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://otika.biz.id/sitemap.xml
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://otika.id/sitemap.xml

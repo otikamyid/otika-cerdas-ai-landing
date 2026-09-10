@@ -1,7 +1,7 @@
 export const site = {
   name: "OTIKA",
   legalName: "PT Otika Solusi Nusantara",
-  url: "https://otika.biz.id",
+  url: "https://otika.id",
   email: "hai@otika.biz.id",
   phoneDisplay: "0851-1720-2425",
   whatsapp: "6285117202425",
