@@ -10,7 +10,7 @@ const Clients = () => {
   const clients = [
     {
       name: "PT Megacon Bangun Perkasa",
-      logo: "https://megaconperkasa.com/wp-content/uploads/2022/09/logo-megacon-precast.png.pagespeed.ce.IKReW0H-aG.png",
+      logo: "/assets/megacon-logo.png",
       link: "https://megaconperkasa.com/"
     },
     {
@@ -29,9 +29,9 @@ const Clients = () => {
       link: "https://wa.me/6282134065599"
     },
     {
-      name: "True Love",
-      logo: "https://otika.biz.id/wp-content/uploads/2025/01/True-Love.webp",
-      link: "https://wa.me/6283831758025"
+      name: "Bintaro Learning Center",
+      logo: "/assets/bintaro-learning-center-logo.png",
+      link: "https://bintarolc.co.id"
     },
     {
       name: "Nur Ramadhan",
