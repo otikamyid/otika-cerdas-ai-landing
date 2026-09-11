@@ -6,7 +6,7 @@ const root = fileURLToPath(new globalThis.URL("../", import.meta.url));
 const dist = join(root, "dist");
 const template = await readFile(join(dist, "index.html"), "utf8");
 const origin = "https://otika.id";
-const image = `${origin}/assets/Hero%20Image%20OTIKA%20(1).webp`;
+const image = `${origin}/assets/otika-social-preview.png`;
 
 const pages = [
   ["/", "Customize AI Agent WhatsApp & Instagram | OTIKA", "AI Agent yang disesuaikan dengan produk, SOP, gaya komunikasi, dan alur bisnis Anda. Konsultasi integrasi WhatsApp dan Instagram bersama Otika."],
