@@ -15,6 +15,7 @@ const pages = [
   ["/fitur/ai-agent", "AI Agent untuk Bisnis | OTIKA", "Customize AI Agent OTIKA berdasarkan produk, SOP, knowledge, gaya bahasa, dan alur layanan bisnis Anda."],
   ["/fitur/follow-up-ai", "Follow Up by AI untuk Bisnis | OTIKA", "Follow Up by AI dari OTIKA membantu menindaklanjuti prospek secara terjadwal, kontekstual, dan tetap dapat diteruskan ke admin."],
   ["/fitur/broadcast-whatsapp", "Broadcast WhatsApp untuk Bisnis | OTIKA", "Broadcast WhatsApp OTIKA untuk campaign, pengumuman, reminder, segmentasi audiens, dan pengiriman template resmi Meta."],
+  ["/fitur/meta-capi", "Meta Conversions API untuk WhatsApp | OTIKA", "Hubungkan percakapan Click-to-WhatsApp dengan event konversi server-side melalui Meta Conversions API OTIKA."],
   ["/kalkulator-biaya-whatsapp", "Kalkulator Biaya WhatsApp API Indonesia | OTIKA", "Hitung estimasi biaya WhatsApp Business Platform Indonesia berdasarkan paket OTIKA dan volume pesan Meta."],
   ["/kebijakan-privasi", "Kebijakan Privasi | OTIKA", "Cara OTIKA mengumpulkan, menggunakan, dan melindungi informasi pengguna layanan."],
   ["/syarat-ketentuan", "Syarat & Ketentuan | OTIKA", "Ketentuan penggunaan layanan Customize AI Agent dan integrasi OTIKA."],

@@ -5,7 +5,7 @@ import { consultationUrl } from "@/lib/site";
 import { ArrowRight, Bot, Check, GitBranch, Megaphone, MessageCircle, RefreshCw, ShieldCheck, Sparkles, Users } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
-export type FeatureKey = "whatsapp-api" | "whatsapp-coexistence" | "ai-agent" | "follow-up-ai" | "broadcast-whatsapp";
+export type FeatureKey = "whatsapp-api" | "whatsapp-coexistence" | "ai-agent" | "follow-up-ai" | "broadcast-whatsapp" | "meta-capi";
 
 type Feature = {
   label: string;
@@ -114,7 +114,35 @@ const features: Record<FeatureKey, Feature> = {
     ],
     note: "Biaya pesan dan persetujuan template mengikuti kategori serta kebijakan Meta. Broadcast tidak boleh digunakan untuk spam.",
   },
+  "meta-capi": {
+    label: "Meta Conversions API",
+    title: "Iklan berhenti menebak. Percakapan ikut memberi sinyal.",
+    description: "Hubungkan perjalanan prospek dari iklan Click-to-WhatsApp ke event konversi server-side. OTIKA membantu mencatat konteks atribusi yang tersedia dan mengirim event yang sudah dipetakan kembali ke Meta.",
+    metaDescription: "Meta Conversions API OTIKA menghubungkan percakapan Click-to-WhatsApp dengan event konversi server-side untuk membantu pengukuran dan optimasi iklan.",
+    icon: GitBranch,
+    highlights: ["Event dikirim melalui koneksi server-side", "Dapat dipicu berdasarkan tahap atau konteks percakapan", "Mendukung pemetaan event seperti Lead dan Purchase"],
+    benefits: [
+      { icon: GitBranch, title: "Jejak klik tidak berhenti di chat", text: "Kaitkan data referral CTWA yang tersedia dengan kontak dan perjalanan prospek di dalam alur OTIKA." },
+      { icon: Sparkles, title: "Kalimat bisa menjadi sinyal", text: "Tentukan percakapan atau kalimat tertentu sebagai pemicu event, misalnya minat, permintaan penawaran, atau konfirmasi transaksi." },
+      { icon: ShieldCheck, title: "Data dikirim lebih terukur", text: "Normalisasi dan hashing data pelanggan yang dipersyaratkan dilakukan sebelum event diteruskan melalui Conversions API." },
+    ],
+    steps: [
+      { title: "Hubungkan aset Meta", text: "Siapkan Dataset atau Pixel dan akses Conversions API dari akun bisnis Meta yang digunakan." },
+      { title: "Petakan sinyal bisnis", text: "Tentukan tahap pipeline, percakapan, atau kalimat yang mewakili Lead, Qualified Lead, Checkout, maupun Purchase." },
+      { title: "Uji sebelum berjalan", text: "Validasi payload dan event melalui alat pengujian Meta, lalu pantau hasilnya setelah aktivasi." },
+    ],
+    note: "Ketersediaan parameter atribusi, penerimaan event, Event Match Quality, dan hasil optimasi tetap mengikuti data yang tersedia serta kebijakan Meta. CAPI memperkuat pengukuran, bukan menjamin performa iklan tertentu.",
+  },
 };
+
+const capiComparison = [
+  ["Infrastruktur pelacakan", "Pixel browser / pencatatan manual", "Meta Conversions API (server-side)"],
+  ["Atribusi Click-to-WhatsApp", "Terbatas setelah pengguna membuka aplikasi", "Parameter referral CTWA yang tersedia dicatat"],
+  ["Ketergantungan pada browser dan ad-blocker", "Masih bergantung pada pelacakan client-side", "Lebih sedikit bergantung pada browser"],
+  ["Pengiriman Event Otomatis berdasarkan percakapan / kalimat", "Tidak tersedia", "Tersedia"],
+  ["Event standar Meta seperti Lead dan Purchase", "Dicatat atau dikirim manual", "Dapat dipetakan dan dikirim otomatis"],
+  ["Normalisasi dan hashing data pelanggan SHA-256", "Perlu implementasi terpisah", "Disiapkan dalam alur pengiriman event"],
+];
 
 const FeaturePage = ({ featureKey }: { featureKey: FeatureKey }) => {
   const feature = features[featureKey];
@@ -148,7 +176,19 @@ const FeaturePage = ({ featureKey }: { featureKey: FeatureKey }) => {
 
       <section className="section"><div className="container-tight"><div className="text-center"><span className="eyebrow">Manfaat utama</span><h2 className="mt-4">Dibangun untuk membantu pekerjaan, bukan menambah ribet</h2></div><div className="mt-12 grid gap-6 md:grid-cols-3">{feature.benefits.map(item => <article className="feature-card" key={item.title}><item.icon className="h-8 w-8 text-primary" /><h3 className="mt-5 text-xl font-bold">{item.title}</h3><p className="mt-3 leading-relaxed text-slate-600">{item.text}</p></article>)}</div></div></section>
 
-      <section className="section bg-slate-50"><div className="container-tight"><div className="grid gap-12 lg:grid-cols-[.8fr_1.2fr]"><div><span className="eyebrow">Cara mulai</span><h2 className="mt-4">Didampingi dari kebutuhan sampai siap digunakan</h2><p className="mt-5 text-slate-600">Setiap bisnis punya kondisi berbeda. OTIKA membantu memilih alur yang relevan, bukan memaksakan semua fitur sekaligus.</p></div><div className="space-y-4">{feature.steps.map((step,index) => <article className="flex gap-5 rounded-2xl border border-slate-200 bg-white p-6" key={step.title}><span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary font-bold text-white">{index + 1}</span><div><h3 className="text-lg font-bold">{step.title}</h3><p className="mt-2 leading-relaxed text-slate-600">{step.text}</p></div></article>)}</div></div>{feature.note && <p className="mt-10 rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-amber-900"><strong>Catatan:</strong> {feature.note}</p>}</div></section>
+      {featureKey === "meta-capi" && <section className="section bg-slate-50"><div className="container-tight">
+        <div className="mx-auto max-w-3xl text-center"><span className="eyebrow">Bandingkan alurnya</span><h2 className="mt-4">Pixel browser mencatat kunjungan.<br />CAPI OTIKA menyambungkan percakapan.</h2><p className="mt-5 leading-relaxed text-slate-600">Lihat perbedaan pelacakan standar dengan alur server-side yang menghubungkan iklan, chat WhatsApp, dan event konversi.</p></div>
+        <div className="mt-10 overflow-x-auto rounded-3xl border border-slate-200 bg-white shadow-sm">
+          <table className="min-w-[760px] w-full text-left text-sm">
+            <caption className="sr-only">Perbandingan pelacakan standar dan Meta Conversions API OTIKA</caption>
+            <thead className="bg-slate-100 text-slate-950"><tr><th className="px-6 py-5 font-bold">Fitur</th><th className="px-6 py-5 font-bold">Pelacakan standar</th><th className="bg-sky-50 px-6 py-5 font-bold text-primary">CAPI OTIKA</th></tr></thead>
+            <tbody>{capiComparison.map(([name, standard, otika]) => <tr className="border-t border-slate-100" key={name}><th scope="row" className="px-6 py-5 font-semibold text-slate-900">{name}</th><td className="px-6 py-5 text-slate-500"><span className="flex items-start gap-2"><span aria-hidden="true" className="mt-0.5 text-slate-300">×</span>{standard}</span></td><td className="bg-emerald-50/60 px-6 py-5 font-semibold text-emerald-700"><span className="flex items-start gap-2"><Check aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0" />{otika}</span></td></tr>)}</tbody>
+          </table>
+        </div>
+        <p className="mt-4 text-xs leading-relaxed text-slate-500">Catatan: parameter dan event yang dapat digunakan bergantung pada payload, konfigurasi, izin, serta ketentuan Meta yang berlaku.</p>
+      </div></section>}
+
+      <section className={`section ${featureKey === "meta-capi" ? "bg-white" : "bg-slate-50"}`}><div className="container-tight"><div className="grid gap-12 lg:grid-cols-[.8fr_1.2fr]"><div><span className="eyebrow">Cara mulai</span><h2 className="mt-4">Didampingi dari kebutuhan sampai siap digunakan</h2><p className="mt-5 text-slate-600">Setiap bisnis punya kondisi berbeda. OTIKA membantu memilih alur yang relevan, bukan memaksakan semua fitur sekaligus.</p></div><div className="space-y-4">{feature.steps.map((step,index) => <article className="flex gap-5 rounded-2xl border border-slate-200 bg-white p-6" key={step.title}><span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary font-bold text-white">{index + 1}</span><div><h3 className="text-lg font-bold">{step.title}</h3><p className="mt-2 leading-relaxed text-slate-600">{step.text}</p></div></article>)}</div></div>{feature.note && <p className="mt-10 rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-amber-900"><strong>Catatan:</strong> {feature.note}</p>}</div></section>
 
       <section className="bg-primary py-16 text-white"><div className="container-tight text-center"><h2 className="text-3xl md:text-4xl">Belum yakin fitur mana yang cocok?</h2><p className="mx-auto mt-4 max-w-2xl text-sky-50">Ceritakan alur bisnis Anda. Tim OTIKA akan membantu memetakan kebutuhan sebelum Anda memilih implementasi.</p><a href={consultationUrl(`${feature.label} CTA`)} target="_blank" rel="noreferrer" className="mt-7 inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 font-bold text-primary">Chat Admin OTIKA <ArrowRight className="h-4 w-4" /></a></div></section>
     </main>

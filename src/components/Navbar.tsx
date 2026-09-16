@@ -1,4 +1,4 @@
-import { ArrowUpRight, Bot, Calculator, ChevronDown, Megaphone, Menu, MessageCircle, RefreshCw, X, type LucideIcon } from "lucide-react";
+import { ArrowUpRight, Bot, Calculator, ChevronDown, GitBranch, Megaphone, Menu, MessageCircle, RefreshCw, X, type LucideIcon } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 type FeatureLink = { label: string; href: string; description: string; icon: LucideIcon };
@@ -10,6 +10,7 @@ const featureLinks: FeatureLink[] = [
   { label: "AI Agent", href: "/fitur/ai-agent", description: "AI yang belajar produk, SOP, dan gaya bicara bisnis Anda.", icon: Bot },
   { label: "Follow Up by AI", href: "/fitur/follow-up-ai", description: "Tindak lanjuti prospek secara kontekstual, bukan template kaku.", icon: RefreshCw },
   { label: "Broadcast WhatsApp", href: "/fitur/broadcast-whatsapp", description: "Campaign dan reminder terarah melalui template resmi Meta.", icon: Megaphone },
+  { label: "Meta Conversions API", href: "/fitur/meta-capi", description: "Sambungkan percakapan CTWA dengan event konversi server-side.", icon: GitBranch },
   { label: "Kalkulator Biaya WhatsApp", href: "/kalkulator-biaya-whatsapp", description: "Perkirakan biaya platform dan pesan WhatsApp Cloud API.", icon: Calculator },
 ];
 
